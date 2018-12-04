@@ -38,9 +38,6 @@ a, a:link, a:visited, a:active{
 
 /*--------OVERRIDE-------*/
 
-.container{
-	max-width: 1200px;}
-
 .progress{
 	height: 25px;}
 
@@ -385,6 +382,7 @@ a[data-lightbox]:hover img{
 @media only screen and 
 (min-device-width : 320px) and 
 (max-device-width : 480px){
+.introduction{font-size: 35px}
 	.headline{font-size: 20px;}
 	.social-icons a{
 		line-height: 2.6rem;
@@ -395,6 +393,7 @@ a[data-lightbox]:hover img{
 @media only screen and 
 (min-device-width : 480px) and 
 (max-device-width : 575px){
+	.introduction{font-size: 40px}
 	.headline{font-size: 24px}
 	.header-content p{font-size: 13px}
 	.social-icons a{
