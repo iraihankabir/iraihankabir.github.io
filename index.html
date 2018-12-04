@@ -1,347 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
+<html>
+<head>
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" type="image/x-icon" href="img/profile.jpg" />
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="keywords" content="iraihankabir, iraihankabir.github.io, resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Raihan Kabir">
+    
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="assets/fa/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-    <title>RAIHAN KABIR</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.jpg" />
+	<title>RAIHAN KABIR</title>
+</head>
+<body>
+	<div data-backdrop="static" data-keyboard="false" class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title project-modal-title" id="modalTitle"></h5>
+					<button id="projectModalCloseBtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<img id="project-modal-img" class="img-fluid project-modal-img" src="">
+					<p id="modal-content-paragrapt"></p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- HEADER -->
+	<header class="header-container">
+		<div class="header-content">
+			<div class="text-center">
+				<img src="assets/img/profile.JPG" class="card-img-top rounded-circle img-thumbnail">
+			</div>
+			<div class="text-center introduction"  id="intro"></div>
+			<div class="text-center text-white-smoke headline mt-2 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">
+				Coding | Travelling | Chess | Movie
+			</div>
+			<div class="social-icons text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+	            <a id="github" target="_blank" href="https://github.com/iraihankabir/">
+	              	<i class="fab fa-github"></i>
+	            </a>
+	            <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/rk4bir/">
+	              	<i class="fab fa-linkedin"></i>
+	            </a>
+	            <a id="facebook" target="_blank" href="https://facebook.com/r.kabir2011">
+	              	<i class="fab fa-facebook-f"></i>
+	            </a>
+	            <a id="twitter" target="_blank" href="https://twitter.com/iamrk_">
+	              	<i class="fab fa-twitter"></i>
+	            </a>
+	            <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UCmPcUtSFNcN7n4Piv2HgtgA">
+	              	<i class="fab fa-youtube"></i>
+	            </a>
+          	</div>
+	         <div class="text-center mt-5">
+	         	<a id="scrollToNext" href="#projects" class="scroll-down-btn">
+	          		<span class="fa fa-chevron-down"></span>
+	          	</a>
+	         </div>
+		</div>
+	</header><!-- HEADER -->
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
-
-  </head>
-
-  <body id="page-top">
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">RAIHAN KABIR</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-          	<a class="nav-link js-scroll-trigger" href="#workshop">Workshop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#project">Project</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skill</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interest</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Award</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container-fluid p-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">Raihan
-            <span class="text-primary">Kabir</span>
-          </h1>
-          <div class="subheading mb-5">Madar Bux Hall · University of Rajshahi, Rajshahi-6205 &nbsp;·&nbsp; <span class="text-dark">+880-1744-593-190</span> &nbsp;·&nbsp;
-            <a href="mailto:name@email.com">iraihankabir@yahoo.com</a>
-          </div>
-          <p class="lead mb-5">AI enthusiast. I am experienced in developing organized web apps. Interested in learning new and cool technologies.</p>
-          <div class="social-icons">
-            <a target="_blank" href="https://github.com/iraihankabir/">
-              <i class="fab fa-github"></i>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/rk4bir/">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a target="_blank" href="https://twitter.com/iamrk_">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a target="_blank" href="https://facebook.com/r.kabir2011">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a target="_blank" href="https://www.youtube.com/channel/UCmPcUtSFNcN7n4Piv2HgtgA">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </div>
+	<!-- PROJECT START -->
+    <section id="projects" class="article project">
+        <div class="container article-container">
+        	<div class="text-center">
+				<h1 class="article-title">Projects</h1>
+			</div>
+            <div class="row article-content" >
+                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="1000ms" data-wow-delay="800ms">
+                    <a href="#" data-lightbox="assets/img/project/ai.jpg"
+                       data-content="Target is to prepare a Network to recognize logics behind logic gates. I had to generate train and test dataset. Construct a linear model with fully connected network. Using gradient descent method for calculation of global minima and update model's behaviour. The network is smart enough to recognize all test data." data-title="LOGIC RECOGNIZER"><img src="assets/img/project/ai.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
+                </div>
+                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="1500ms" data-wow-delay="800ms">
+                    <a href="#" data-lightbox="assets/img/project/blog.jpg"
+                       data-content="A blog to share problems with freinds. Used Google Drive API to store data in google drive." data-title="FRIENDS"><img src="assets/img/project/blog.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
+                </div>
+                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="2000ms" data-wow-delay="800ms">
+                    <a href="#" data-lightbox="assets/img/project/restaurant.jpg"
+                       data-content="A web based application for providing home services and pre-book system at several restaurants." data-title="RESTORABD"><img src="assets/img/project/restaurant.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
+                </div>
+                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="1500ms" data-wow-delay="800ms">
+                    <a href="#" data-lightbox="assets/img/project/business.jpg"
+                       data-content="A business webapp to automate stuffs for established multi-dimensional business. Responsibilites was like daily accounce managing with bunch of tables. Product management. Employee management features etc." data-title="BISMILLAHTRADERS"><img src="assets/img/project/business.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
+                </div>
+                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="2000ms" data-wow-delay="600ms">
+                    <a href="#" data-lightbox="assets/img/project/translation.jpg"
+                       data-content="A translation agency to provide translation services." data-title="WORDBRIDGE"><img src="assets/img/project/translation.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
+                </div>
+                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="1000ms" data-wow-delay="800ms">
+                    <a href="#" data-lightbox="assets/img/project/webapp.jpg"
+                       data-content="Feedback based webapp to send messages anonymously." data-title="REVEALSECRET"><img src="assets/img/project/webapp.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
+                </div>
+            </div>
         </div>
-      </section>
+    </section><!-- PROJECT END -->
 
-      <hr class="m-0">
+    <!-- SKILL START -->
+    <section class="skill" style="padding-bottom: 100px;">
+		<div class="container skill-container">
+			<div class="text-center">
+				<h1 class="article-title">skills</h1>
+			</div>
+			<div class="row article-content">
+				<div class="col-md-4 mb-5 mt-md-5 mt-lg-5 wow fadeInLeft" data-wow-duration="1.6s" data-wow-delay="600ms">
+					<img src="assets/img/skills.png" class="d-none d-md-flex d-lg-flex img-fluid w-100">
+				</div>
+				<div class="col-md-8 wow fadeInRight" data-wow-duration="2s" data-wow-delay="800ms">
+					<div class="skill-item">
+						<h3>C/C++</h3>
+						<div class="progress">
+						  	<div class="progress-bar bg-70" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h3>CSS</h3>
+						<div class="progress">
+						  	<div class="progress-bar bg-90" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h3>HTML</h3>
+						<div class="progress">
+						  	<div class="progress-bar bg-95" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h3>JavaScript</h3>
+						<div class="progress">
+						  	<div class="progress-bar bg-75" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h3>PHP</h3>
+						<div class="progress">
+						  	<div class="progress-bar bg-78" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">78%</div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h3>Python</h3>
+						<div class="progress">
+						  	<div class="progress-bar bg-85" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h3>Shell</h3>
+						<div class="progress">
+						  	<div class="progress-bar bg-65" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="mt-5 col-md-8 offset-md-2 text-center skill-img-conatiner wow fadeInUp" data-wow-duration="2s" data-wow-delay="800ms">
+					<a href="javascript:void(0);">
+		              	<img src="assets/img/skill/linux.png" class="rounded-circle img-thumbnail img-fluid">
+		            </a>
+		            <a href="javascript:void(0);">
+		              	<img src="assets/img/skill/github.png" class="img-thumbnail rounded-circle img-fluid">
+		            </a>
+		            <a href="javascript:void(0);">
+		              	<img src="assets/img/skill/git.png" class="rounded-circle img-thumbnail img-fluid">
+		            </a>
+		            <a href="javascript:void(0);">
+		              	<img src="assets/img/skill/mysql.png" class="img-thumbnail rounded-circle img-fluid">
+		            </a>
+		            <a href="javascript:void(0);">
+		              	<img src="assets/img/skill/bootstrap.png" class="img-thumbnail rounded-circle img-fluid">
+		            </a>
+		            <a href="javascript:void(0);">
+		              	<img src="assets/img/skill/jquery.png" class="img-thumbnail rounded-circle img-fluid">
+		            </a>
+		            <a href="javascript:void(0);">
+		              	<img src="assets/img/skill/django.png" class="img-thumbnail rounded-circle img-fluid">
+		            </a>
+				</div>
+			</div>
+		</div>
+	</section> <!-- SKILLS END -->
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="workshop">
-      <div class="my-auto">
-          <h2 class="mb-5">Workshops</h2>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">System Admin and High Performance Computing Workshop</h3>
-              <p>Introduction to centOS, Cluster computing, Parallel programming,
-				system administration. Approximately 20 hours (3 days) of training.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2018</span>
-            </div>
-          </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Intro to Python for Data Science</h3>
-              <p>4 hours training program offered by DataCamp</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2018</span>
-            </div>
-          </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Deep Learning: Hands-On</h3>
-              <p>A day long workshop on AI and Deep learning with a Deep Learning Research Engineer working in a Japanese Deep Learning company.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2017</span>
-            </div>
-          </div>
-        </div>
-      </section>
+	<!-- CONTACT START -->
+	<section class="contact">
+		<div class="container contact-container">
+			<div class="text-center">
+				<h1 class="article-title text-white-smoke ">Contact</h1>
+			</div>
+			<div class="article-content row text-center">
+				<div class="col-md-4 contact-item">
+					<div>
+						<a class="location" href="javascript:void(0);">
+							<i class="fa fa-map-marked-alt"></i>
+						</a>
+						<p class="contact-text">
+							Madar Bux Hall, RU<br>
+							Rajshahi, BD
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 contact-item">
+					<div>
+						<a class="email" href="mailto:iraihankabir@yahoo.com">
+							<i class="fa fa-envelope"></i>
+						</a>
+						<p class="contact-text">
+							iraihankabir@yahoo.com 
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 contact-item">
+					<div>
+						<a class="phone" href="tel:8801521116643">
+							<i class="fa fa-phone-volume"></i>
+						</a>
+						<p class="contact-text">
+							(+880)1521-1166-43 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- CONTACT END -->
 
-      <hr class="m-0">
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="project">
-        <div class="my-auto">
-          <h2 class="mb-5">Projects</h2>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">RestoraBD</h3>
-              <div class="subheading mb-3">restaurant ordering system</div>
-              <p>A web based application for providing home services and pre-book system at several restaurants. <a target="_blank" href="https://github.com/iraihankabir/restaurants">source</a></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2018</span>
-            </div>
-          </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Graviton</h3>
-              <div class="subheading mb-3">Blog</div>
-              <p>A blog to share problems with freinds. Used Google Drive API to store data in google drive. <a target="_blank" href="https://github.com/iraihankabir/friends">source</a></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2018</span>
-            </div>
-          </div>
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="row">
+				<div class="col-12">
+					<div class="footer-social-icons text-center wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s">
+			            <a id="github" target="_blank" href="https://github.com/iraihankabir/">
+			              	<i class="fab fa-github"></i>
+			            </a>
+			            <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/rk4bir/">
+			              	<i class="fab fa-linkedin"></i>
+			            </a>
+			            <a id="facebook" target="_blank" href="https://facebook.com/r.kabir2011">
+			              	<i class="fab fa-facebook-f"></i>
+			            </a>
+			            <a id="twitter" target="_blank" href="https://twitter.com/iamrk_">
+			              	<i class="fab fa-twitter"></i>
+			            </a>
+			            <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UCmPcUtSFNcN7n4Piv2HgtgA">
+			              	<i class="fab fa-youtube"></i>
+			            </a>
+		          	</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Logic Recognizer</h3>
-              <div class="subheading mb-3">Deep Learning Project</div>
-              <p>Target is to prepare a Network to recognize logics behind logic gates. I had to generate train and test dataset. Construct a linear model with fully connected network. Using gradient descent method for calculation of global minima and update model's behaviour. The network is smart enough to recognize all test data with 100% accuracy. <a target="_blank" href="https://github.com/iraihankabir/LOGIC_RECOGNIZER">source</a></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2018</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Hand written digit classifier</h3>
-              <div class="subheading mb-3">Deep Learning Project</div>
-              <p>Job is to construct a neural network model that can recognize handwritten digits. The model was constructed using MNIST dataset. <a target="_blank" href="https://github.com/iraihankabir/handwritten-digit-classifier">source</a></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2018</span>
-            </div>
-          </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Revealsecret</h3>
-              <div class="subheading mb-3">Feedback web app</div>
-              <p>A feedback based web app. Where the message/feedback sender remains anonymous. <a target="_blank" href="https://github.com/iraihankabir/revealsecret">source</a></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2018</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">bismillahtraders</h3>
-              <div class="subheading mb-3">business web app</div>
-              <p> A business webapp to automate stuffs for established multi-dimensional business. Responsibilites was like daily accounce managing with bunch of tables. Product management. Employee management features etc. <a target="_blank" href="https://github.com/iraihankabir/bismillahtraders">source</a></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2017</span>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
-          <div class="resume-item d-flex flex-column flex-md-row mb-3">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">University of Rajshahi</h3>
-              <div class="subheading mb-3">Bachelor of Science in Physics</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Class of 2019</span>
-            </div>
-          </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-3">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Jahangirpur Govt. Degree College</h3>
-              <div class="subheading mb-3">Science</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Class of 2013</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Khajur U.P. High School</h3>
-              <div class="subheading mb-3">Science</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Class of 2011</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
-
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline dev-icons">
-            <li title="Python" class="list-inline-item">
-              <i class="fab fa-python"></i>
-            </li>
-            <li title="HTML" class="list-inline-item">
-              <i class="fab fa-html5"></i>
-            </li>
-            <li title="CSS" class="list-inline-item">
-              <i class="fab fa-css3-alt"></i>
-            </li>
-            <li title="JavaScript" class="list-inline-item">
-              <i class="fab fa-js-square"></i>
-            </li>
-            <li title="Git" class="list-inline-item">
-              <i class="fab fa-git-square"></i>
-            </li>
-            <li title="GitHub" class="list-inline-item">
-              <i class="fab fa-github-square"></i>
-            </li>
-          </ul>
-          <ul>
-              <li>Django</li>
-              <li>MySQL</li>
-              <li>Bootstrap</li>
-              <li>jQuery</li>
-              <li>PyCharm</li>
-              <li>Python-virtualenv</li>
-              <li>Linux</li>
-          </ul>
-
-          <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              	<i class="fa-li fa fa-check"></i>
-              	Deep Learning/AI</li>
-            <li> 
-            <li>
-              	<i class="fa-li fa fa-check"></i>
-              	Web developement</li>
-              <li>
-              <i class="fa-li fa fa-check"></i>
-             	Web design</li>
-             <li>
-              <i class="fa-li fa fa-check"></i>
-              Responsive Design</li>
-            <li>
-            
-          </ul>
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class=" p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <h5 class="text-secondary">AI tech. &nbsp;|&nbsp; Travelling &nbsp;|&nbsp; Chess Playing &nbsp;|&nbsp; Watching movies</h5>
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class=" p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Intro to Python for Data Science certified by DataCamp</li>
-            <li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Chess Player of the year at College</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              runner up at a local chess competition</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              runner up at a businesss (tech. solution) competition organized by Physics Career Club, RU</li>
-            <li>
-          </ul>
-        </div>
-      </section>
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
-  </body>
-
+    <!-- portfolio END -->
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/scroll.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.easing.js"></script>
+	<script type="text/javascript" src="assets/js/wow.js"></script>
+	<script type="text/javascript" src="assets/js/typed.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('[data-lightbox]').click(function(e){
+				e.preventDefault();
+				var img = $(this).attr('data-lightbox');
+				var title = $(this).attr('data-title');
+				var content = $(this).attr('data-content');
+				showProjectDetail(img, title, content);
+			});
+		});
+	</script>
+</body>
 </html>
