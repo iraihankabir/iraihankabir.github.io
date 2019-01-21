@@ -21,254 +21,260 @@
 	<title>RAIHAN KABIR</title>
 </head>
 <body>
-	<div data-backdrop="static" data-keyboard="false" class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title project-modal-title" id="modalTitle"></h5>
-					<button id="projectModalCloseBtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<img id="project-modal-img" class="img-fluid project-modal-img" src="">
-					<p id="modal-content-paragrapt"></p>
-				</div>
-			</div>
-		</div>
+	<div id="loader" class="loader">
+		<img src="assets/img/loader.gif" class="img-fluid">
+		<h2 class="mt-2 text-info font-weight-bold">Loading...</h2>
 	</div>
-
-	<!-- HEADER -->
-	<header id="toTop"  class="header-container wow fadeIn" data-wow-duration="1000ms" data-wow-delay="800ms">
-		<div class="header-content">
-			<div class="text-center">
-				<img src="assets/img/profile.JPG" class="card-img-top rounded-circle img-thumbnail">
-			</div>
-			<div class="text-center introduction"  id="intro"></div>
-			<div class="text-center text-white-smoke headline mt-2 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">
-				Coding | Travelling | Chess | Movie
-			</div>
-			<div class="social-icons text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-	            <a id="github" target="_blank" href="https://github.com/iraihankabir/">
-	              	<i class="fab fa-github"></i>
-	            </a>
-	            <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/rk4bir/">
-	              	<i class="fab fa-linkedin"></i>
-	            </a>
-	            <a id="facebook" target="_blank" href="https://facebook.com/r.kabir2011">
-	              	<i class="fab fa-facebook-f"></i>
-	            </a>
-	            <a id="twitter" target="_blank" href="https://twitter.com/iamrk_">
-	              	<i class="fab fa-twitter"></i>
-	            </a>
-	            <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UCmPcUtSFNcN7n4Piv2HgtgA">
-	              	<i class="fab fa-youtube"></i>
-	            </a>
-          	</div>
-	         <div class="text-center mt-5">
-	         	<a id="scrollToNext" href="#projects" class="scroll-down-btn">
-	          		<span class="fa fa-chevron-down"></span>
-	          	</a>
-	         </div>
-		</div>
-	</header><!-- HEADER -->
-
-
-	<!-- PROJECT START -->
-    <section id="projects" class="article project">
-        <div class="container article-container">
-        	<div class="text-center">
-				<h1 class="article-title">Projects</h1>
-			</div>
-            <div class="row article-content" >
-                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="1000ms" data-wow-delay="800ms">
-                    <a href="#" data-lightbox="assets/img/project/ai.jpg"
-                       data-content="Target is to prepare a Network to recognize logics behind logic gates. I had to generate train and test dataset. Construct a linear model with fully connected network. Using gradient descent method for calculation of global minima and update model's behaviour. The network is smart enough to recognize all test data." data-title="LOGIC RECOGNIZER"><img src="assets/img/project/ai.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
-                </div>
-                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="1500ms" data-wow-delay="800ms">
-                    <a href="#" data-lightbox="assets/img/project/blog.jpg"
-                       data-content="A blog to share problems with freinds. Used Google Drive API to store data in google drive." data-title="FRIENDS"><img src="assets/img/project/blog.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
-                </div>
-                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="2000ms" data-wow-delay="800ms">
-                    <a href="#" data-lightbox="assets/img/project/restaurant.jpg"
-                       data-content="A web based application for providing home services and pre-book system at several restaurants." data-title="RESTORABD"><img src="assets/img/project/restaurant.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
-                </div>
-                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="1500ms" data-wow-delay="800ms">
-                    <a href="#" data-lightbox="assets/img/project/business.jpg"
-                       data-content="A business webapp to automate stuffs for established multi-dimensional business. Responsibilites was like daily accounce managing with bunch of tables. Product management. Employee management features etc." data-title="BISMILLAHTRADERS"><img src="assets/img/project/business.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
-                </div>
-                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="2000ms" data-wow-delay="600ms">
-                    <a href="#" data-lightbox="assets/img/project/translation.jpg"
-                       data-content="A translation agency to provide translation services." data-title="WORDBRIDGE"><img src="assets/img/project/translation.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
-                </div>
-                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="1000ms" data-wow-delay="800ms">
-                    <a href="#" data-lightbox="assets/img/project/webapp.jpg"
-                       data-content="Feedback based webapp to send messages anonymously." data-title="REVEALSECRET"><img src="assets/img/project/webapp.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
-                </div>
-            </div>
-        </div>
-    </section><!-- PROJECT END -->
-
-    <!-- SKILL START -->
-    <section class="skill" style="padding-bottom: 100px;">
-		<div class="container skill-container">
-			<div class="text-center">
-				<h1 class="article-title">skills</h1>
-			</div>
-			<div class="row article-content">
-				<div class="col-md-4 mb-5 mt-md-5 mt-lg-5 wow fadeInLeft" data-wow-duration="1.6s" data-wow-delay="600ms">
-					<img src="assets/img/skills.png" class="d-none d-md-flex d-lg-flex img-fluid w-100">
-				</div>
-				<div class="col-md-8 wow fadeInRight" data-wow-duration="2s" data-wow-delay="800ms">
-					<div class="skill-item">
-						<h3>C/C++</h3>
-						<div class="progress">
-						  	<div class="progress-bar bg-70" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-						</div>
+	<div id="body" style="display: none;">
+		<div data-backdrop="static" data-keyboard="false" class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title project-modal-title" id="modalTitle"></h5>
+						<button id="projectModalCloseBtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
 					</div>
-					<div class="skill-item">
-						<h3>CSS</h3>
-						<div class="progress">
-						  	<div class="progress-bar bg-90" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-						</div>
+					<div class="modal-body">
+						<img id="project-modal-img" class="img-fluid project-modal-img" src="">
+						<p id="modal-content-paragrapt"></p>
 					</div>
-					<div class="skill-item">
-						<h3>HTML</h3>
-						<div class="progress">
-						  	<div class="progress-bar bg-95" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-						</div>
-					</div>
-					<div class="skill-item">
-						<h3>JavaScript</h3>
-						<div class="progress">
-						  	<div class="progress-bar bg-75" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-						</div>
-					</div>
-					<div class="skill-item">
-						<h3>PHP</h3>
-						<div class="progress">
-						  	<div class="progress-bar bg-78" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">78%</div>
-						</div>
-					</div>
-					<div class="skill-item">
-						<h3>Python</h3>
-						<div class="progress">
-						  	<div class="progress-bar bg-85" role="progressbar" style="width: 89%;" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">89%</div>
-						</div>
-					</div>
-					<div class="skill-item">
-						<h3>Shell</h3>
-						<div class="progress">
-						  	<div class="progress-bar bg-65" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-				<div class="mt-5 col-md-8 offset-md-2 text-center skill-img-conatiner wow fadeInUp" data-wow-duration="2s" data-wow-delay="800ms">
-					<a href="javascript:void(0);" title="Bootstrap">
-		              	<img src="assets/img/skill/bootstrap.png" class="img-thumbnail rounded-circle img-fluid">
-		            </a>
-					<a href="javascript:void(0);" title="Django">
-		              	<img src="assets/img/skill/django.png" class="img-thumbnail rounded-circle img-fluid">
-		            </a>
-		            <a href="javascript:void(0);" title="GitHub">
-		              	<img src="assets/img/skill/github.png" class="img-thumbnail rounded-circle img-fluid">
-		            </a>
-		            <a href="javascript:void(0);" title="Git">
-		              	<img src="assets/img/skill/git.png" class="rounded-circle img-thumbnail img-fluid">
-		            </a>
-		            <a href="javascript:void(0);" title="jQuery">
-		              	<img src="assets/img/skill/jquery.png" class="img-thumbnail rounded-circle img-fluid">
-		            </a>
-		            <a href="javascript:void(0);" title="Linux">
-		              	<img src="assets/img/skill/linux.png" class="rounded-circle img-thumbnail img-fluid">
-		            </a>
-		            <a href="javascript:void(0);" title="MySQL">
-		              	<img src="assets/img/skill/mysql.png" class="img-thumbnail rounded-circle img-fluid">
-		            </a>
 				</div>
 			</div>
 		</div>
-	</section> <!-- SKILLS END -->
 
-	<!-- CONTACT START -->
-	<section class="contact">
-		<div class="container contact-container">
-			<div class="text-center">
-				<h1 class="article-title text-white-smoke ">Contact</h1>
+		<!-- HEADER -->
+		<header id="toTop"  class="header-container wow fadeIn" data-wow-duration="1000ms" data-wow-delay="800ms">
+			<div class="header-content">
+				<div class="text-center">
+					<img src="assets/img/profile.JPG" class="card-img-top rounded-circle img-thumbnail">
+				</div>
+				<div class="text-center introduction"  id="intro"></div>
+				<div class="text-center text-white-smoke headline mt-2 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">
+					Coding | Travelling | Chess | Movie
+				</div>
+				<div class="social-icons text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+		            <a id="github" target="_blank" href="https://github.com/iraihankabir/">
+		              	<i class="fab fa-github"></i>
+		            </a>
+		            <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/rk4bir/">
+		              	<i class="fab fa-linkedin"></i>
+		            </a>
+		            <a id="facebook" target="_blank" href="https://facebook.com/r.kabir2011">
+		              	<i class="fab fa-facebook-f"></i>
+		            </a>
+		            <a id="twitter" target="_blank" href="https://twitter.com/iamrk_">
+		              	<i class="fab fa-twitter"></i>
+		            </a>
+		            <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UCmPcUtSFNcN7n4Piv2HgtgA">
+		              	<i class="fab fa-youtube"></i>
+		            </a>
+	          	</div>
+		         <div class="text-center mt-5">
+		         	<a id="scrollToNext" href="#projects" class="scroll-down-btn">
+		          		<span class="fa fa-chevron-down"></span>
+		          	</a>
+		         </div>
 			</div>
-			<div class="article-content row text-center">
-				<div class="col-md-4 contact-item">
-					<div>
-						<a class="location" href="javascript:void(0);">
-							<i class="fa fa-map-marked-alt"></i>
-						</a>
-						<p class="contact-text">
-							Madar Bux Hall, RU<br>
-							Rajshahi, BD
-						</p>
+		</header><!-- HEADER -->
+
+
+		<!-- PROJECT START -->
+	    <section id="projects" class="article project">
+	        <div class="container article-container">
+	        	<div class="text-center">
+					<h1 class="article-title">Projects</h1>
+				</div>
+	            <div class="row article-content" >
+	                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="1000ms" data-wow-delay="800ms">
+	                    <a href="#" data-lightbox="assets/img/project/ai.jpg"
+	                       data-content="Target is to prepare a Network to recognize logics behind logic gates. I had to generate train and test dataset. Construct a linear model with fully connected network. Using gradient descent method for calculation of global minima and update model's behaviour. The network is smart enough to recognize all test data." data-title="LOGIC RECOGNIZER"><img src="assets/img/project/ai.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
+	                </div>
+	                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="1500ms" data-wow-delay="800ms">
+	                    <a href="#" data-lightbox="assets/img/project/blog.jpg"
+	                       data-content="A blog to share problems with freinds. Used Google Drive API to store data in google drive." data-title="FRIENDS"><img src="assets/img/project/blog.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
+	                </div>
+	                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="2000ms" data-wow-delay="800ms">
+	                    <a href="#" data-lightbox="assets/img/project/restaurant.jpg"
+	                       data-content="A web based application for providing home services and pre-book system at several restaurants." data-title="RESTORABD"><img src="assets/img/project/restaurant.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
+	                </div>
+	                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="1500ms" data-wow-delay="800ms">
+	                    <a href="#" data-lightbox="assets/img/project/business.jpg"
+	                       data-content="A business webapp to automate stuffs for established multi-dimensional business. Responsibilites was like daily accounce managing with bunch of tables. Product management. Employee management features etc." data-title="BISMILLAHTRADERS"><img src="assets/img/project/business.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
+	                </div>
+	                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="2000ms" data-wow-delay="600ms">
+	                    <a href="#" data-lightbox="assets/img/project/translation.jpg"
+	                       data-content="A translation agency to provide translation services." data-title="WORDBRIDGE"><img src="assets/img/project/translation.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
+	                </div>
+	                <div class="col-sm-4 wow zoomIn mb-5" data-wow-duration="1000ms" data-wow-delay="800ms">
+	                    <a href="#" data-lightbox="assets/img/project/webapp.jpg"
+	                       data-content="Feedback based webapp to send messages anonymously." data-title="REVEALSECRET"><img src="assets/img/project/webapp.jpg" class=" img-fluid project-img animated zoomIn" alt="Portfolio"/></a>
+	                </div>
+	            </div>
+	        </div>
+	    </section><!-- PROJECT END -->
+
+	    <!-- SKILL START -->
+	    <section class="skill" style="padding-bottom: 100px;">
+			<div class="container skill-container">
+				<div class="text-center">
+					<h1 class="article-title">skills</h1>
+				</div>
+				<div class="row article-content">
+					<div class="col-md-4 mb-5 mt-md-5 mt-lg-5 wow fadeInLeft" data-wow-duration="1.6s" data-wow-delay="600ms">
+						<img src="assets/img/skills.png" class="d-none d-md-flex d-lg-flex img-fluid w-100">
+					</div>
+					<div class="col-md-8 wow fadeInRight" data-wow-duration="2s" data-wow-delay="800ms">
+						<div class="skill-item">
+							<h3>C/C++</h3>
+							<div class="progress">
+							  	<div class="progress-bar bg-70" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<h3>CSS</h3>
+							<div class="progress">
+							  	<div class="progress-bar bg-90" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<h3>HTML</h3>
+							<div class="progress">
+							  	<div class="progress-bar bg-95" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<h3>JavaScript</h3>
+							<div class="progress">
+							  	<div class="progress-bar bg-75" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<h3>PHP</h3>
+							<div class="progress">
+							  	<div class="progress-bar bg-78" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">78%</div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<h3>Python</h3>
+							<div class="progress">
+							  	<div class="progress-bar bg-85" role="progressbar" style="width: 89%;" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">89%</div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<h3>Shell</h3>
+							<div class="progress">
+							  	<div class="progress-bar bg-65" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="mt-5 col-md-8 offset-md-2 text-center skill-img-conatiner wow fadeInUp" data-wow-duration="2s" data-wow-delay="800ms">
+						<a href="javascript:void(0);" title="Bootstrap">
+			              	<img src="assets/img/skill/bootstrap.png" class="img-thumbnail rounded-circle img-fluid">
+			            </a>
+						<a href="javascript:void(0);" title="Django">
+			              	<img src="assets/img/skill/django.png" class="img-thumbnail rounded-circle img-fluid">
+			            </a>
+			            <a href="javascript:void(0);" title="GitHub">
+			              	<img src="assets/img/skill/github.png" class="img-thumbnail rounded-circle img-fluid">
+			            </a>
+			            <a href="javascript:void(0);" title="Git">
+			              	<img src="assets/img/skill/git.png" class="rounded-circle img-thumbnail img-fluid">
+			            </a>
+			            <a href="javascript:void(0);" title="jQuery">
+			              	<img src="assets/img/skill/jquery.png" class="img-thumbnail rounded-circle img-fluid">
+			            </a>
+			            <a href="javascript:void(0);" title="Linux">
+			              	<img src="assets/img/skill/linux.png" class="rounded-circle img-thumbnail img-fluid">
+			            </a>
+			            <a href="javascript:void(0);" title="MySQL">
+			              	<img src="assets/img/skill/mysql.png" class="img-thumbnail rounded-circle img-fluid">
+			            </a>
 					</div>
 				</div>
-				<div class="col-md-4 contact-item">
-					<div>
-						<a class="email" href="mailto:iraihankabir@yahoo.com">
-							<i class="fa fa-envelope"></i>
-						</a>
-						<p class="contact-text">
-							<a href="mailto:iraihankabir@yahoo.com">
-								iraihankabir@yahoo.com 
+			</div>
+		</section> <!-- SKILLS END -->
+
+		<!-- CONTACT START -->
+		<section class="contact">
+			<div class="container contact-container">
+				<div class="text-center">
+					<h1 class="article-title text-white-smoke ">Contact</h1>
+				</div>
+				<div class="article-content row text-center">
+					<div class="col-md-4 contact-item">
+						<div>
+							<a class="location" href="javascript:void(0);">
+								<i class="fa fa-map-marked-alt"></i>
 							</a>
-						</p>
+							<p class="contact-text">
+								Madar Bux Hall, RU<br>
+								Rajshahi, BD
+							</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4 contact-item">
-					<div>
-						<a class="phone" href="tel:+8801521116643">
-							<i class="fa fa-phone-volume"></i>
-						</a>
-						<p class="contact-text">
+					<div class="col-md-4 contact-item">
+						<div>
+							<a class="email" href="mailto:iraihankabir@yahoo.com">
+								<i class="fa fa-envelope"></i>
+							</a>
+							<p class="contact-text">
+								<a href="mailto:iraihankabir@yahoo.com">
+									iraihankabir@yahoo.com 
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 contact-item">
+						<div>
 							<a class="phone" href="tel:+8801521116643">
-								(+880)1521-1166-43
+								<i class="fa fa-phone-volume"></i>
 							</a>
-						</p>
+							<p class="contact-text">
+								<a class="phone" href="tel:+8801521116643">
+									(+880)1521-1166-43
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="text-center scroll-up-btn-container">
+			         <a id="scrollToTop" href="#toTop" class="scroll-up-btn">
+			      		<span class="fa fa-chevron-up"></span>
+			      	</a>
+			     </div>
+			</div>
+		</section><!-- CONTACT END -->
+		
+		
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="footer-container wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">
+				<div class="row">
+					<div class="col-12">
+						<div class="footer-social-icons text-center ">
+				            <a id="github" target="_blank" href="https://github.com/iraihankabir/">
+				              	<i class="fab fa-github"></i>
+				            </a>
+				            <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/rk4bir/">
+				              	<i class="fab fa-linkedin"></i>
+				            </a>
+				            <a id="facebook" target="_blank" href="https://facebook.com/r.kabir2011">
+				              	<i class="fab fa-facebook-f"></i>
+				            </a>
+				            <a id="twitter" target="_blank" href="https://twitter.com/iamrk_">
+				              	<i class="fab fa-twitter"></i>
+				            </a>
+				            <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UCmPcUtSFNcN7n4Piv2HgtgA">
+				              	<i class="fab fa-youtube"></i>
+				            </a>
+			          	</div>
 					</div>
 				</div>
 			</div>
-			<div class="text-center scroll-up-btn-container">
-		         <a id="scrollToTop" href="#toTop" class="scroll-up-btn">
-		      		<span class="fa fa-chevron-up"></span>
-		      	</a>
-		     </div>
-		</div>
-	</section><!-- CONTACT END -->
-	
-	
-	<!-- FOOTER -->
-	<footer class="footer">
-		<div class="footer-container wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">
-			<div class="row">
-				<div class="col-12">
-					<div class="footer-social-icons text-center ">
-			            <a id="github" target="_blank" href="https://github.com/iraihankabir/">
-			              	<i class="fab fa-github"></i>
-			            </a>
-			            <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/rk4bir/">
-			              	<i class="fab fa-linkedin"></i>
-			            </a>
-			            <a id="facebook" target="_blank" href="https://facebook.com/r.kabir2011">
-			              	<i class="fab fa-facebook-f"></i>
-			            </a>
-			            <a id="twitter" target="_blank" href="https://twitter.com/iamrk_">
-			              	<i class="fab fa-twitter"></i>
-			            </a>
-			            <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UCmPcUtSFNcN7n4Piv2HgtgA">
-			              	<i class="fab fa-youtube"></i>
-			            </a>
-		          	</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+		</footer>
+	</div>
 
     <!-- portfolio END -->
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
@@ -281,6 +287,8 @@
 	<script type="text/javascript" src="assets/js/main.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			$("#body").show();
+			$("#loader").hide();
 			$('[data-lightbox]').click(function(e){
 				e.preventDefault();
 				var img = $(this).attr('data-lightbox');
