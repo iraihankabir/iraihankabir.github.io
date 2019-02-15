@@ -4,6 +4,10 @@
     src: url(fonts/kalam.regular.ttf);
 }
 @font-face {
+    font-family: kalam-light;
+    src: url(fonts/kalam.light.ttf);
+}
+@font-face {
     font-family: kalam-bold;
     src: url(fonts/kalam.bold.ttf);
 }
@@ -11,11 +15,12 @@
 
 /* COMMON-CLASSES */
 .font-kalam-regular{font-family: 'kalam-regular'}
+.font-kalam-light{font-family: 'kalam-light'}
 .font-kalam-bold{font-family: 'kalam-bold'}
 /* =========================COMMON-CLASSES=========================== */
 
 body{
-	background: #f7f7f7;
+	background: #f9f7f7;
 	padding: 0px;
 	margin: 0 auto;
 	text-align: center;
