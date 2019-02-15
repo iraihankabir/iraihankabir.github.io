@@ -59,7 +59,6 @@ body{
 .social-links li a div{
 	height: 35px;
 	width: 35px;
-	border-radius: 43px;
 }
 /* SOCIAL LINKS */
 .about{
@@ -78,6 +77,10 @@ body{
 (min-device-width : 320px) and 
 (max-device-width : 480px){
 	.profile-name{font-size: 40px;}
-	.profile-subtitle{font-size: 20px;}
+	.profile-subtitle{font-size: 16px;}
+	.social-links li a div{
+		height: 28px;
+		width: 28px;
+        }
 	.para{font-size: 14px;}	
 }
