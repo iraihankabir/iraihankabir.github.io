@@ -1,0 +1,78 @@
+/* FONTS */
+@font-face {
+    font-family: kalam-regular;
+    src: url(fonts/kalam.regular.ttf);
+}
+@font-face {
+    font-family: kalam-bold;
+    src: url(fonts/kalam.bold.ttf);
+}
+/* =========================FONTS=========================== */
+
+/* COMMON-CLASSES */
+.font-kalam-regular{font-family: 'kalam-regular'}
+.font-kalam-bold{font-family: 'kalam-bold'}
+/* =========================COMMON-CLASSES=========================== */
+
+body{
+	background: #f7f7f7;
+	padding: 0px;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 960px;
+}
+.main-container{
+	width: 100%;
+}
+.profile{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.profile-img{
+	margin-top: 80px;
+	height: 130px;
+	width: 130px;
+	border: 1px solid #f7f7f7;
+	border-radius: 120px;
+}
+.profile-name{
+	font-size: 50px;
+	margin: 0px;
+	padding-bottom: 8px;
+}
+.profile-subtitle{
+	font-size: 25px;
+	margin: 0px;
+	padding-bottom: 0px;	
+}
+/* SOCIAL LINKS */
+.social-links li{
+	padding-right: 5px;
+	list-style: none;
+	display: inline-block;
+}
+.social-links li a div{
+	height: 35px;
+	width: 35px;
+	border-radius: 43px;
+}
+/* SOCIAL LINKS */
+.about{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.about{margin-top: 30px}
+.about-para{
+	text-align: justify;
+	font-size: 20px
+}
+
+
+
+@media only screen and 
+(min-device-width : 320px) and 
+(max-device-width : 480px){
+	.profile-name{font-size: 40px;}
+	.profile-subtitle{font-size: 20px;}
+	.para{font-size: 14px;}	
+}
