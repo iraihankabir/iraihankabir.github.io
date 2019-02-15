@@ -62,10 +62,10 @@ body{
 }
 /* SOCIAL LINKS */
 .about{
+	margin-top: 30px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
-.about{margin-top: 30px}
 .about-para{
 	text-align: justify;
 	font-size: 20px
