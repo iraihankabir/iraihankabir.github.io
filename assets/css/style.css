@@ -19,7 +19,10 @@
     font-family: abel;
     src: url(../fonts/abel.regular.ttf);
 }
-
+@font-face{
+	font-family: Oswald;
+	src: url(../fonts/Oswald.ttf);
+}
 
 /*----------- DEFAULT ---------*/
 html, body{
@@ -104,7 +107,7 @@ a, a:link, a:visited, a:active{
 .introduction{
 	margin-top: 30px;
 	color:#000000!important;
-	font-family:Oswald;
+	font-family: Oswald;
 	font-size: 45px;
 	margin-bottom: 0;
 	height: 60px;}
