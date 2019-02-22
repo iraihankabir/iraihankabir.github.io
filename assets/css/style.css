@@ -7,23 +7,11 @@
     font-family: kalam-light;
     src: url(../fonts/kalam.light.ttf);
 }
-@font-face {
-    font-family: kalam-regular;
-    src: url(../fonts/kalam.regular.ttf);
-}
+
 @font-face {
     font-family: kalam-bold;
     src: url(../fonts/kalam.bold.ttf);
 }
-@font-face {
-    font-family: abel;
-    src: url(../fonts/abel.regular.ttf);
-}
-@font-face{
-	font-family: Oswald;
-	src: url(../fonts/Oswald.ttf);
-}
-
 /*----------- DEFAULT ---------*/
 html, body{
 	padding: 0;
@@ -63,7 +51,6 @@ a, a:link, a:visited, a:active{
 .font-kalam-regular{font-family: 'kalam-regular'}
 .font-kalam-light{font-family: 'kalam-light'}
 .font-kalam-bold{font-family: 'kalam-bold'}
-.font-abel{font-family: 'abel'}
 
 /*--------OVERRIDE-------*/
 
@@ -107,8 +94,8 @@ a, a:link, a:visited, a:active{
 .introduction{
 	margin-top: 30px;
 	color:#000000!important;
-	font-family: Oswald;
-	font-size: 45px;
+	font-family: kalam-bold;
+	font-size: 50px;
 	margin-bottom: 0;
 	height: 60px;}
 
@@ -187,7 +174,7 @@ a, a:link, a:visited, a:active{
 	text-transform: uppercase;
 	padding-top: 20px;
 	font-size: 30px;
-	font-family: Oswald;
+	font-family: kalam-bold;
 	color: #000000;}
 
 .article-content{
@@ -225,7 +212,7 @@ a, a:link, a:visited, a:active{
 .project-modal-title{
 	color:#000000;
 	text-transform: uppercase;
-	font-family:Oswald;
+	font-family:kalam-bold;
 	font-size: 30px;}
 
 .project-modal-img{
@@ -447,7 +434,7 @@ a[data-lightbox]:hover img{
 @media only screen and 
 (min-device-width : 320px) and 
 (max-device-width : 480px){
-	.introduction{font-size: 35px}
+	.introduction{font-size: 40px}
 	.headline{font-size: 24px;}
 	.social-icons a{
 		line-height: 2.6rem;
@@ -465,7 +452,7 @@ a[data-lightbox]:hover img{
 @media only screen and 
 (min-device-width : 480px) and 
 (max-device-width : 575px){
-	.introduction{font-size: 40px}
+	.introduction{font-size: 43px}
 	.headline{font-size: 26px}
 	.header-content p{font-size: 13px}
 	.social-icons a{
