@@ -27,7 +27,12 @@
 	<title>Raihan Kabir</title>
 </head>
 <body>
-	<div>
+
+    <div id="pageLoader" class="container page-loader">
+        <img src="assets/img/loader.gif">
+        <div class="text-center pt-3 font-kalam-light text-info" style="font-size: 30px">Loading...</div>
+	</div>
+	<div id="body" class="d-none">
 		<!-- PROJECT POP-UP MODAL -->
 		<div data-backdrop="static" data-keyboard="false" class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -215,19 +220,9 @@
 		    </div>
 			<div class="container contact-container mt-5">
 				<div class="text-center">
-					<h1 class="article-title text-white-smoke ">Contact Me</h1>
+					<h1 class="contact-title">Contact Me</h1>
 				</div>
-				<div class="article-content row text-center">
-					<div class="col-md-4 contact-item">
-						<div>
-							<a class="location" href="javascript:void(0);">
-								<i class="fa fa-map-marked-alt"></i>
-							</a>
-							<p class="contact-text">
-								Rajshahi, BD
-							</p>
-						</div>
-					</div>
+				<div class="contact-content row text-center">
 					<div class="col-md-4 contact-item">
 						<div>
 							<a class="email" href="mailto:iraihankabir@yahoo.com">
@@ -252,11 +247,21 @@
 							</p>
 						</div>
 					</div>
+					<div class="col-md-4 contact-item">
+						<div>
+							<a class="location" href="javascript:void(0);">
+								<i class="fa fa-map-marked-alt"></i>
+							</a>
+							<p class="contact-text">
+								Rajshahi, BD
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section><!-- CONTACT END -->
-		
-		
+
+
 		<!-- FOOTER -->
 		<footer class="footer">
 			<div class="footer-container wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">
@@ -294,7 +299,9 @@
 	<script type="text/javascript" src="assets/js/typed.min.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function(){
+		$(window).ready(function(){
+			$('#body').removeClass('d-none');
+			$('#pageLoader').addClass('d-none');
 			$('[data-lightbox]').click(function(e){
 				e.preventDefault();
 				var img = $(this).attr('data-lightbox');
