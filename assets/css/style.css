@@ -478,8 +478,8 @@ a[data-lightbox]:hover img{
 @media only screen and 
 (min-device-width : 320px) and 
 (max-device-width : 480px){
-	.introduction{font-size: 40px}
-	.headline{font-size: 24px;}
+	.introduction{font-size: 35px}
+	.headline{font-size: 20px;}
 	.social-icons a{
 		line-height: 2.6rem;
 		height: 2.6rem;
@@ -497,7 +497,7 @@ a[data-lightbox]:hover img{
 @media only screen and 
 (min-device-width : 480px) and 
 (max-device-width : 575px){
-	.introduction{font-size: 43px}
+	.introduction{font-size: 45px}
 	.headline{font-size: 26px}
 	.header-content p{font-size: 13px}
 	.social-icons a{
