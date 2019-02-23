@@ -126,7 +126,7 @@ a, a:link, a:visited, a:active{
 	color:#000000!important;
 	font-family: kalam-bold;
 	font-size: 50px;
-	margin-bottom: 0;
+	margin-bottom: 20px;
 	height: 60px;}
 
 .headline{
@@ -478,8 +478,8 @@ a[data-lightbox]:hover img{
 @media only screen and 
 (min-device-width : 320px) and 
 (max-device-width : 480px){
-	.introduction{font-size: 35px}
-	.headline{font-size: 20px;}
+	.introduction{font-size: 40px}
+	.headline{font-size: 22px;}
 	.social-icons a{
 		line-height: 2.6rem;
 		height: 2.6rem;

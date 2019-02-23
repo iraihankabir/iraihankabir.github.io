@@ -22,10 +22,20 @@ function loader(){
 }
 
 
+
 function say_hello(){
     $("#intro").typed({
         strings: ["Hello!", "I&#8217;m Raihan Kabir"],
-        typeSpeed: 1,
+        typeSpeed: 10,
+	    backSpeed: 0,
+	    showCursor: false,
+	    cursorChar: '',
+	    fadeOut: true,
+	    fadeOutDelay: 400,
+	    backDelay: 600,
+	    startDelay: 1000,
+	    loop: true,
+	    loopCount: 2,
     });
 }
 
