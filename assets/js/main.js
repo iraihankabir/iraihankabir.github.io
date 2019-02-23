@@ -79,7 +79,7 @@ $('#scrollToTop').click(function(e){
 
 wow.init();
 
-LOADING = setInterval(loader, 800);
+LOADING = setInterval(loader, 1000);
 
 $(document).ready(function(){
     $('[data-lightbox]').click(function(e){
