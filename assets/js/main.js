@@ -1,22 +1,8 @@
-var PERCENTAGE = 0;
-var LOADING = null;
-
-
 function showProjectDetail(img, title, content){
     $('#modalTitle').html(title);
     $("#project-modal-img").attr('src', img);
     $("#modal-content-paragrapt").html(content);
     $('#projectModal').modal('show');
-}
-
-function loader(){
-    PERCENTAGE += 10;
-    $('#Loading-percentage').html(PERCENTAGE+'%');
-    if(PERCENTAGE == 110){
-        clearInterval(LOADING);
-        $('#body').removeClass('d-none');
-        $('#pageLoader').addClass('d-none');
-    }
 }
 
 
@@ -34,6 +20,7 @@ var wow = new WOW({
 });
 
 
+
 $('#scrollToNext').click(function(e){
    e.preventDefault();
    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -47,6 +34,7 @@ $('#scrollToNext').click(function(e){
         }
     }
 });
+
 
 $('#scrollToTop').click(function(e){
    e.preventDefault();
@@ -64,24 +52,11 @@ $('#scrollToTop').click(function(e){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 wow.init();
 
-LOADING = setInterval(loader, 1000);
-
 $(document).ready(function(){
+    $('#body').removeClass('d-none');
+    $('#pageLoader').addClass('d-none');
     $('[data-lightbox]').click(function(e){
         e.preventDefault();
         var img = $(this).attr('data-lightbox');
@@ -89,14 +64,16 @@ $(document).ready(function(){
         var content = $(this).attr('data-content');
         showProjectDetail(img, title, content);
     });
+    
     $('#projectModalCloseBtn').click(function(e){
         e.preventDefault();
         $('#projectModal').modal('hide');
     });
-	$(function(){
+	
+    $(function(){
         $("#intro").typed({
             strings: ["Hello!", "I&#8217;m Raihan Kabir"],
             typeSpeed: 1,
         });
-    })
+    });
 });
