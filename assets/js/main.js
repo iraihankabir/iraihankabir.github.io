@@ -1,3 +1,7 @@
+var PERCENTAGE = 10;
+var LOADING = null;
+
+
 function showProjectDetail(img, title, content){
     $('#modalTitle').html(title);
     $("#project-modal-img").attr('src', img);
@@ -6,19 +10,38 @@ function showProjectDetail(img, title, content){
 }
 
 
+function loader(){
+    PERCENTAGE -= 1;
+    $('#loading-percentage').html(PERCENTAGE);
+    if(PERCENTAGE == 0){
+        $('#body').removeClass('d-none');
+        $('#pageLoader').addClass('d-none');
+        wow.init();
+        say_hello();
+    }
+}
+
+
+function say_hello(){
+    $("#intro").typed({
+        strings: ["Hello!", "I&#8217;m Raihan Kabir"],
+        typeSpeed: 1,
+    });
+}
+
+
 var wow = new WOW({
     boxClass: 'wow',
     animateClass: 'animated',
     offset: 0,
     mobile: true,
-    live: true,
+    live: false,
     callback: function(box){
 
     },
     scrollContainer: null,
     resetAnimation: true,
 });
-
 
 
 $('#scrollToNext').click(function(e){
@@ -50,13 +73,9 @@ $('#scrollToTop').click(function(e){
     }
 });
 
-
-
-wow.init();
-
-$(document).ready(function(){
-    $('#body').removeClass('d-none');
-    $('#pageLoader').addClass('d-none');
+/*===============================================================*/
+$(window).ready(function(){
+    LOADING = setInterval(loader, 800);
     $('[data-lightbox]').click(function(e){
         e.preventDefault();
         var img = $(this).attr('data-lightbox');
@@ -68,12 +87,5 @@ $(document).ready(function(){
     $('#projectModalCloseBtn').click(function(e){
         e.preventDefault();
         $('#projectModal').modal('hide');
-    });
-	
-    $(function(){
-        $("#intro").typed({
-            strings: ["Hello!", "I&#8217;m Raihan Kabir"],
-            typeSpeed: 1,
-        });
     });
 });
