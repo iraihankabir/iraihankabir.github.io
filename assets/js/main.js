@@ -16,8 +16,8 @@ function loader(){
     if(PERCENTAGE == 0){
         $('#body').removeClass('d-none');
         $('#pageLoader').addClass('d-none');
-        wow.init();
         say_hello();
+        wow.init();
     }
 }
 
