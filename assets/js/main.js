@@ -1,8 +1,22 @@
+var PERCENTAGE = 0;
+var LOADING = null;
+
+
 function showProjectDetail(img, title, content){
     $('#modalTitle').html(title);
     $("#project-modal-img").attr('src', img);
     $("#modal-content-paragrapt").html(content);
     $('#projectModal').modal('show');
+}
+
+function loader(){
+    PERCENTAGE += 10;
+    $('#Loading-percentage').html(PERCENTAGE+'%');
+    if(PERCENTAGE == 110){
+        clearInterval(LOADING);
+        $('#body').removeClass('d-none');
+        $('#pageLoader').addClass('d-none');
+    }
 }
 
 
@@ -53,10 +67,28 @@ $('#scrollToTop').click(function(e){
 
 
 
+
+
+
+
+
+
+
+
+
+
 wow.init();
 
+LOADING = setInterval(loader, 800);
 
 $(document).ready(function(){
+    $('[data-lightbox]').click(function(e){
+        e.preventDefault();
+        var img = $(this).attr('data-lightbox');
+        var title = $(this).attr('data-title');
+        var content = $(this).attr('data-content');
+        showProjectDetail(img, title, content);
+    });
     $('#projectModalCloseBtn').click(function(e){
         e.preventDefault();
         $('#projectModal').modal('hide');

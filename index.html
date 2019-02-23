@@ -29,7 +29,10 @@
 <body>
 
     <div id="pageLoader" class="container page-loader">
-        <img src="assets/img/loader.gif">
+        <div id="Loading-percentage" class="font-kalam-regular" 
+        	style="font-size: 40px">
+        	0%
+        </div>
         <div class="text-center pt-3 font-kalam-light text-info" style="font-size: 30px">Loading...</div>
 	</div>
 	<div id="body" class="d-none">
@@ -298,18 +301,5 @@
 	<script type="text/javascript" src="assets/js/wow.js"></script>
 	<script type="text/javascript" src="assets/js/typed.min.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
-	<script type="text/javascript">
-		$(window).ready(function(){
-			$('#body').removeClass('d-none');
-			$('#pageLoader').addClass('d-none');
-			$('[data-lightbox]').click(function(e){
-				e.preventDefault();
-				var img = $(this).attr('data-lightbox');
-				var title = $(this).attr('data-title');
-				var content = $(this).attr('data-content');
-				showProjectDetail(img, title, content);
-			});
-		});
-	</script>
 </body>
 </html>
