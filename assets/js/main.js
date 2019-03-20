@@ -46,9 +46,7 @@ var wow = new WOW({
     offset: 0,
     mobile: true,
     live: false,
-    callback: function(box){
-
-    },
+    callback: function(box){},
     scrollContainer: null,
     resetAnimation: true,
 });

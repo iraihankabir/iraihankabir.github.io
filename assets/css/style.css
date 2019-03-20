@@ -160,6 +160,9 @@ a, a:link, a:visited, a:active{
 
 #github:hover{
 	background-color: #24292e;}
+	
+#stackoverflow:hover{
+	background-color: #CF7721;}	
 
 #linkedin:hover{
 	background-color: #055884;}
