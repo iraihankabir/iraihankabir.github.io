@@ -149,18 +149,20 @@ a, a:link, a:visited, a:active{
 	border-radius: 100%;
 	text-align: center;
 	font-size: 1.5rem;
-	line-height: 3.0rem;
-	height: 3.0rem;
-	width: 3.0rem;
-	margin-right: 5px;}
+	line-height: 2.8rem;
+	height: 2.8rem;
+	width: 2.8rem;
+	margin-right: 3px;}
 
 .social-icons a:last-child {
   margin-right: 0;}
 
-
 #github:hover{
 	background-color: #24292e;}
-	
+
+#hackerrank:hover{
+	background-color: #1ba94c;}
+
 #stackoverflow:hover{
 	background-color: #CF7721;}	
 
@@ -518,9 +520,9 @@ a[data-lightbox]:hover img{
 	.headline{font-size: 26px}
 	.header-content p{font-size: 13px}
 	.social-icons a{
-		line-height: 2.8rem;
-		height: 2.8rem;
-		width: 2.8rem;}
+		line-height: 2.5rem;
+		height: 2.5rem;
+		width: 2.5rem;}
 	.scroll-down-btn{
 		font-size: 18px;
 		padding: 10px 13px 10px 13px;}
