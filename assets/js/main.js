@@ -83,7 +83,7 @@ $('#scrollToTop').click(function(e){
 
 /*===============================================================*/
 $(window).ready(function(){
-    LOADING = setInterval(loader, 800);
+    LOADING = setInterval(loader, 600);
     $('[data-lightbox]').click(function(e){
         e.preventDefault();
         var img = $(this).attr('data-lightbox');

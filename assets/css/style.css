@@ -166,15 +166,6 @@ a, a:link, a:visited, a:active{
 #stackoverflow:hover{
 	background-color: #CF7721;}	
 
-#linkedin:hover{
-	background-color: #055884;}
-
-#twitter:hover{
-	background-color: #1c94e0;}
-
-#facebook:hover{
-	background-color: #29487d;}
-
 #youtube:hover{
 	background-color: #BD5D38;}
 
@@ -461,10 +452,19 @@ a[data-lightbox]:hover img{
 	border-radius: 100%;
 	text-align: center;
 	font-size: 1.2rem;
-	line-height: 2.0rem;
-	height: 2.0rem;
-	width: 2.0rem;
-	margin-right: 5px;}
+	line-height: 2.3rem;
+	height: 2.3rem;
+	width: 2.3rem;
+	margin-right: 7px;}
+
+#linkedin{
+	background-color: #055884;}
+
+#twitter{
+	background-color: #1c94e0;}
+
+#facebook{
+	background-color: #29487d;}
 
 /*--------FOOTER----------
 
