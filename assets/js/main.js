@@ -1,26 +1,9 @@
-var PERCENTAGE = 10;
-var LOADING = null;
-
-
 function showProjectDetail(img, title, content){
     $('#modalTitle').html(title);
     $("#project-modal-img").attr('src', img);
     $("#modal-content-paragrapt").html(content);
     $('#projectModal').modal('show');
 }
-
-
-function loader(){
-    PERCENTAGE -= 1;
-    $('#loading-percentage').html(PERCENTAGE);
-    if(PERCENTAGE == 0){
-        $('#body').removeClass('d-none');
-        $('#pageLoader').addClass('d-none');
-        say_hello();
-        wow.init();
-    }
-}
-
 
 
 function say_hello(){
@@ -52,6 +35,8 @@ var wow = new WOW({
 });
 
 
+wow.init();
+
 $('#scrollToNext').click(function(e){
    e.preventDefault();
    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -82,8 +67,12 @@ $('#scrollToTop').click(function(e){
 });
 
 /*===============================================================*/
+/*
+$(window).load(function(){
+    $('#loader').fadeOut();
+});*/
 $(window).ready(function(){
-    LOADING = setInterval(loader, 600);
+    say_hello();
     $('[data-lightbox]').click(function(e){
         e.preventDefault();
         var img = $(this).attr('data-lightbox');
