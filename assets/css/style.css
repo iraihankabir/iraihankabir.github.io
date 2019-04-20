@@ -219,7 +219,7 @@ a, a:link, a:visited, a:active{
 .project{
 	margin-top: 60px;
 	padding-top: 20px!important;
-	background: url('../img/project.png');
+	background: url('../img/project.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -387,14 +387,14 @@ a[data-lightbox]:hover img{
 /*------CONTACT--------*/
 .contact{
 	padding-top: 50px;
-	background: #021e09 url(../img/contact.png) center center no-repeat fixed;
+	background: #021e09;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	position: relative;
 	opacity: 0.90;
-	padding-bottom: 10px;}
+	padding-bottom: 60px;}
 
 .contact-container{
 	background: transparent;
