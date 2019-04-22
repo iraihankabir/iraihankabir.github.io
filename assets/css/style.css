@@ -149,9 +149,9 @@ a, a:link, a:visited, a:active{
 	border-radius: 100%;
 	text-align: center;
 	font-size: 1.5rem;
-	line-height: 2.8rem;
-	height: 2.8rem;
-	width: 2.8rem;
+	line-height: 2.5rem;
+	height: 2.5rem;
+	width: 2.5rem;
 	margin-right: 3px;}
 
 .social-icons a:last-child {
@@ -170,16 +170,16 @@ a, a:link, a:visited, a:active{
 	background-color: #BD5D38;}
 
 .scroll-to-about-container{
-	margin-top: 100px;
+	margin-top: 60px;
 }
 .scroll-down-btn{
-	font-size: 18px;
+	font-size: 14px;
 	padding: 10px 12px 10px 12px;
 	border-radius: 100%;
-	border: 4px solid #1e1e1e;}
+	border: 3px solid #1e1e1e;}
 
 .scroll-down-btn:hover{
-	border: 3px solid #1e1e1e;}
+	border: 4px solid #1e1e1e;}
 
 /* ----------------ABOUT---------------- */
 .about{
@@ -669,15 +669,9 @@ a[data-lightbox]:hover img{
 	.introduction{font-size: 40px}
 	.headline{font-size: 22px;}
 	.social-icons a{
-		line-height: 2.6rem;
-		height: 2.6rem;
-		width: 2.6rem;}
-	.scroll-down-btn{
-		font-size: 12px;
-		padding: 10px 13px 10px 13px;}
-	.scroll-up-btn{
-		font-size: 14px;
-		padding: 10px 13px 10px 13px;}
+		line-height: 2.4rem;
+		height: 2.4rem;
+		width: 2.4rem;}
 	.footer-social-icons{
 		margin-top: 30px;
 		margin-bottom: 30px}
@@ -691,15 +685,9 @@ a[data-lightbox]:hover img{
 	.headline{font-size: 26px}
 	.header-content p{font-size: 13px}
 	.social-icons a{
-		line-height: 2.6rem;
-		height: 2.6rem;
-		width: 2.6rem;}
-	.scroll-down-btn{
-		font-size: 18px;
-		padding: 10px 13px 10px 13px;}
-	.scroll-up-btn{
-		font-size: 13px;
-		padding: 10px 13px 10px 13px;}
+		line-height: 2.4rem;
+		height: 2.4rem;
+		width: 2.4rem;}
 	.footer-social-icons{
 		margin-top: 30px;
 		margin-bottom: 30px}
