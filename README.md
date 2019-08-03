@@ -1,2 +1,2 @@
-# rk4bir.github.io {personal portfolio}
+# Personal portfolio
 http://rk4bir.github.io/
