@@ -75,22 +75,23 @@ if(!isChrome) {
     document.getElementsByClassName('infinity')[0].style.display = "block";
 }
 
+// loader stopping function
+function imageLoaded() {
+   // function to invoke for loaded image
+   $('#loader').fadeOut();
+}
+
 $(document).ready(function(){
-    //$('#loader').fadeOut();
+
     // check img load and stop loader
-    $(function() {
-        function imageLoaded() {
-           // function to invoke for loaded image
-           $('#loader').fadeOut();
+    $('img').each(function() {
+        if( this.complete ) {
+            imageLoaded.call( this );
+        } else {
+            $(this).one('load', imageLoaded);
         }
-        $('img').each(function() {
-            if( this.complete ) {
-                imageLoaded.call( this );
-            } else {
-                $(this).one('load', imageLoaded);
-            }
-        });
     });
+
     say_hello();
     $('[data-lightbox]').click(function(e){
         e.preventDefault();
