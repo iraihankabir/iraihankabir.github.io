@@ -71,7 +71,7 @@ $('#scrollToTop').click(function(e){
 $(document).ready(function(){
 
     // check bg img load and stop loader
-    $('<img/>').attr('src', 'https://rk4bir.github.io/assets/img/cover.png').load(function() {
+    $('<img/>').attr('src', 'https://rk4bir.github.io/assets/img/cover.png').on('load',function() {
        $(this).remove();
        $('#loader').fadeOut();
     });
