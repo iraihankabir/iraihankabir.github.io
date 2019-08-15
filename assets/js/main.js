@@ -67,11 +67,9 @@ $('#scrollToTop').click(function(e){
 });
 
 /*===============================================================*/
-/*
-$(window).load(function(){
+
+$(document).ready(function(){
     $('#loader').fadeOut();
-});*/
-$(window).ready(function(){
     say_hello();
     $('[data-lightbox]').click(function(e){
         e.preventDefault();
