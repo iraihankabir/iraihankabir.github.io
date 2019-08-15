@@ -2,7 +2,13 @@ function showProjectDetail(img, title, content){
     $('#modalTitle').html(title);
     $("#project-modal-img").attr('src', img);
     $("#modal-content-paragrapt").html(content);
-    $('#projectModal').modal('show');
+    $('#projectModal').modal(
+        {
+            'show': true,
+            'keyboard': true,
+            'focus': true
+        }
+    );
 }
 
 
@@ -18,7 +24,7 @@ function say_hello(){
 	    backDelay: 600,
 	    startDelay: 1000,
 	    loop: true,
-	    loopCount: 2,
+        loopCount: 1,
     });
 }
 
