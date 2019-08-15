@@ -68,31 +68,16 @@ $('#scrollToTop').click(function(e){
 
 /*===============================================================*/
 
-// Because only Chrome supports offset-path, feGaussianBlur for now
-var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-if(!isChrome) {
-    document.getElementsByClassName('infinityChrome')[0].style.display = "none";
-    document.getElementsByClassName('infinity')[0].style.display = "block";
-}
-
-// loader stopping function
-function imageLoaded() {
-   // function to invoke for loaded image
-   $('#loader').fadeOut();
-}
-
 $(document).ready(function(){
 
-    // check img load and stop loader
-    $('img').each(function() {
-        if( this.complete ) {
-            imageLoaded.call( this );
-        } else {
-            $(this).one('load', imageLoaded);
-        }
+    // check bg img load and stop loader
+    $('<img/>').attr('src', 'https://rk4bir.github.io/assets/img/cover.png').load(function() {
+       $(this).remove();
+       $('#loader').fadeOut();
     });
 
     say_hello();
+    
     $('[data-lightbox]').click(function(e){
         e.preventDefault();
         var img = $(this).attr('data-lightbox');
