@@ -110,7 +110,7 @@ $(document).ready(function(){
         $('#projectModal').modal('hide');
     });
 
-    $('#proposal-form').submit(function(e) {
+    $('#form-submit-btn').click(function(e) {
         e.preventDefault();
         var form_data = {
             'name': $('#name').val(),
@@ -120,7 +120,7 @@ $(document).ready(function(){
             'website': $('#website').val(),
             'description': $('#description').val()
         }
-        $('#form-error').text("Backend of this form is under construction. Come again and try. Thanks!");
+        $('#form-error').fadeOut().text("Backend of this form is under construction. Come again and try. Thanks!").fadeIn();
         /*$.ajax({
             url: "http://myportfoliobackend.herokuapp.com/api/hirings/create",
             method: 'POST',
