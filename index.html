@@ -48,12 +48,6 @@
 
 		<!-- HEADER -->
 		<header id="toTop" class="header-container wow fadeIn" data-wow-duration="1000ms" data-wow-delay="800ms">
-			
-			<!-- RESUME DOWNLOAD LINK
-			<div class="text-right pt-4 pr-3 wow fadeInRight"
-				data-wow-duration="2s" data-wow-delay="800ms">
-				<a target="_blank" href="https://rk4bir.github.io/assets/resume.pdf" class="btn btn-sm p-1 pr-3 pl-3 btn-dark text-white-smoke font-weight-bold " style="border-radius: 15px; 	box-shadow: 0 2px 5px 0 black, 0 1px 8px 0 black;">Resume&nbsp;&nbsp;<span class="fa fa-cloud-download-alt"></span></a>
-			</div> -->
 
 			<div class="header-content">
 				<div class="text-center">
@@ -79,7 +73,7 @@
 		            </a>
 	          	</div>
 	          	<div class="text-center wow swing" data-wow-duration="1.5s" data-wow-delay="1s">
-		         	<a class="btn btn-md btn-warning"> <span class="fa fa-briefcase"></span> Hire me!</a>
+		         	<a class="btn btn-md btn-warning" id="scrollToHireMe" href="#HIRE-ME"> <span class="fa fa-briefcase"></span> Hire me!</a>
 		        </div>
 		        <div class="text-center scroll-to-about-container">
 		         	<a id="scrollToNext" href="#about" class="scroll-down-btn">
@@ -211,8 +205,40 @@
 			</div>
 		</section> <!-- SKILLS END -->
 
-		<!-- CONTACT START -->
-		<section class="contact">
+		<!-- HIRE ME FORM & MAP VIEW-->
+		<section id="HIRE-ME" class="hire-me">
+			<div class="container">
+				<div class="row">
+					<!-- hire me form container -->
+					<div class="col-md-6">
+						<form class="form-horizontal bg-white" role="form" method="POST" action="">
+					        <div class="field-label-responsive">
+					            <label for="name"></label>
+					        </div>
+				            <div class="form-group">
+				                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+				                    <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-envelope"></i></div>
+				                    <input type="text" name="username" class="form-control" id="username" placeholder="E-mail" autofocus>
+				                </div>
+				            </div>
+						    
+					        <div>
+					            <button type="submit" id="submit" class="btn btn-sm btn-success">
+					            	<i class="fa fa-chevron-right mr-2"></i>Send proposal</button>
+					        </div>
+						</form>
+					</div><!-- hire me form container -->
+
+					<!-- embed map -->
+					<div class="col-md-6">
+						
+					</div><!-- embed map -->
+				</div><!-- row -->
+			</div><!-- container -->
+		</section><!-- HIRE ME FORM & MAP VIEW-->
+
+		<!-- FOOTER START -->
+		<footer class="footer">
 			<div class="text-center scroll-up-btn-container">
 		         <a id="scrollToTop" href="#toTop" class="scroll-up-btn">
 		      		<span class="fa fa-chevron-up text-white-smoke"></span>
@@ -266,7 +292,7 @@
 					</div>
 				</div>
 			</div>
-		</section><!-- CONTACT END -->
+		</footer><!-- FOOTER END -->
 	</main>
 
 	<div id="loader">

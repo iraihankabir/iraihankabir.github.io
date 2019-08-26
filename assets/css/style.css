@@ -558,9 +558,22 @@ a[data-lightbox]:hover img{
 	border: 3px solid #000000;}
 
 
+/* ---------- HIRE ME & MAP STYLES */
 
-/*------CONTACT--------*/
-.contact{
+.hire-me{
+	margin-top: 60px;
+	padding-top: 20px!important;
+	background: url('../img/project.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	height: auto;}
+
+/*------FOOTER--------*/
+.footer{
 	padding-top: 50px;
 	background: #021e09;
 	-webkit-background-size: cover;
