@@ -19,6 +19,7 @@
     <!-- STYLESHEET -->
     <link rel="stylesheet" type="text/css" href="assets/fa/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mdb.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- title icon -->
@@ -73,7 +74,7 @@
 		            </a>
 	          	</div>
 	          	<div class="text-center wow swing" data-wow-duration="1.5s" data-wow-delay="1s">
-		         	<a class="btn btn-md btn-warning" id="scrollToHireMe" href="#HIRE-ME"> <span class="fa fa-briefcase"></span> Hire me!</a>
+		         	<a class="btn btn-md btn-warning text-dark" id="scrollToHireMe" href="#HIRE-ME"> <span class="fa fa-briefcase"></span> Hire me!</a>
 		        </div>
 		        <div class="text-center scroll-to-about-container">
 		         	<a id="scrollToNext" href="#about" class="scroll-down-btn">
@@ -132,108 +133,86 @@
 	        </div>
 	    </section><!-- PROJECT END -->
 
-	    <!-- SKILL START -->
-	    <section class="skill" style="padding-bottom: 100px;">
-			<div class="container skill-container">
-				<div class="text-center">
-					<h1 class="article-title">skills</h1>
-				</div>
-				<div class="row article-content">
-					<div class="col-md-4 mb-5 mt-md-5 mt-lg-5 wow fadeInLeft" data-wow-duration="800ms" data-wow-delay="600ms">
-						<img src="assets/img/skills.png" class="d-none d-md-flex d-lg-flex img-fluid w-100">
-					</div>
-					<div class="col-md-8 wow fadeInRight" data-wow-duration="600ms" data-wow-delay="800ms">
-						<div class="skill-item">
-							<h3>C/C++</h3>
-							<div class="progress">
-							  	<div class="progress-bar bg-70" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="skill-item">
-							<h3>CSS</h3>
-							<div class="progress">
-							  	<div class="progress-bar bg-90" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="skill-item">
-							<h3>HTML</h3>
-							<div class="progress">
-							  	<div class="progress-bar bg-95" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="skill-item">
-							<h3>JavaScript</h3>
-							<div class="progress">
-							  	<div class="progress-bar bg-75" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="skill-item">
-							<h3>Python</h3>
-							<div class="progress">
-							  	<div class="progress-bar bg-85" role="progressbar" style="width: 90%;" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-					<div class="mt-5 col-md-8 offset-md-2 text-center skill-img-conatiner wow fadeInUp" data-wow-duration="400ms" data-wow-delay="400ms">
-						<a href="javascript:void(0);" title="Bootstrap">
-			              	<img src="assets/img/skill/bootstrap.png" class="img-thumbnail rounded-circle img-fluid">
-			            </a>
-						<a href="javascript:void(0);" title="Django">
-			              	<img src="assets/img/skill/django.png" class="img-thumbnail rounded-circle img-fluid">
-			            </a>
-			            <a href="javascript:void(0);" title="Flask">
-			              	<img src="assets/img/skill/flask.png" class="img-thumbnail rounded-circle img-fluid">
-			            </a>
-			            <a href="javascript:void(0);" title="GitHub">
-			              	<img src="assets/img/skill/github.png" class="img-thumbnail rounded-circle img-fluid">
-			            </a>
-			            <a href="javascript:void(0);" title="Git">
-			              	<img src="assets/img/skill/git.png" class="rounded-circle img-thumbnail img-fluid">
-			            </a>
-			            <a href="javascript:void(0);" title="jQuery">
-			              	<img src="assets/img/skill/jquery.png" class="img-thumbnail rounded-circle img-fluid">
-			            </a>
-			            <a href="javascript:void(0);" title="Linux">
-			              	<img src="assets/img/skill/linux.png" class="rounded-circle img-thumbnail img-fluid">
-			            </a>
-			            <a href="javascript:void(0);" title="MySQL">
-			              	<img src="assets/img/skill/mysql.png" class="img-thumbnail rounded-circle img-fluid">
-			            </a>
-					</div>
-				</div>
-			</div>
-		</section> <!-- SKILLS END -->
+	   
 
 		<!-- HIRE ME FORM & MAP VIEW-->
 		<section id="HIRE-ME" class="hire-me">
 			<div class="container">
 				<div class="row">
 					<!-- hire me form container -->
-					<div class="col-md-6">
-						<form class="form-horizontal bg-white" role="form" method="POST" action="">
+					<div class="col-md-8 offset-md-2">
+						<form class="form-horizontal pt-5 pb-5" role="form" method="POST" action="">
 					        <div class="field-label-responsive">
 					            <label for="name"></label>
 					        </div>
+				            
+					        <!-- name -->
 				            <div class="form-group">
 				                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-				                    <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-envelope"></i></div>
-				                    <input type="text" name="username" class="form-control" id="username" placeholder="E-mail" autofocus>
+				                    <div class="input-group-addon mt-1" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+				                    <input type="text" name="name" class="form-control" id="name" 
+				                    	placeholder="Full name" onblur="this.placeholder='Full name'" 
+				                    	onfocus="this.placeholder=''">
 				                </div>
 				            </div>
-						    
-					        <div>
-					            <button type="submit" id="submit" class="btn btn-sm btn-success">
-					            	<i class="fa fa-chevron-right mr-2"></i>Send proposal</button>
-					        </div>
-						</form>
-					</div><!-- hire me form container -->
 
-					<!-- embed map -->
-					<div class="col-md-6">
-						
-					</div><!-- embed map -->
-				</div><!-- row -->
+				            <!-- email -->
+				            <div class="form-group">
+				                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+				                    <div class="input-group-addon mt-1" style="width: 2.6rem"><i class="fa fa-envelope"></i></div>
+				                    <input type="text" name="email" class="form-control" id="email" 
+				                    	placeholder="Email" onblur="this.placeholder='Email'" 
+				                    	onfocus="this.placeholder=''">
+				                </div>
+				            </div>
+
+				            <!-- company -->
+				            <div class="form-group">
+				                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+				                    <div class="input-group-addon mt-1" style="width: 2.6rem"><i class="fa fa-briefcase"></i></div>
+				                    <input type="text" name="company" class="form-control" id="company" 
+				                    	placeholder="Company" onblur="this.placeholder='Company'" 
+				                    	onfocus="this.placeholder=''">
+				                </div>
+				            </div>
+
+				            <!-- website/link -->
+				            <div class="form-group">
+				                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+				                    <div class="input-group-addon mt-1" style="width: 2.6rem"><i class="fa fa-link"></i></div>
+				                    <input type="text" name="website" class="form-control" id="website" 
+				                    	placeholder="Link or website" onblur="this.placeholder='Link or websitee'" 
+				                    	onfocus="this.placeholder=''">
+				                </div>
+				            </div>
+
+				            <!-- budget -->
+				            <div class="form-group">
+				                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+				                    <div class="input-group-addon mt-1" style="width: 2.6rem"><i class="fa fa-money"></i></div>
+				                    <input type="number" name="budget" class="form-control" id="budget" 
+				                    	placeholder="Budget" onblur="this.placeholder='Budget'" 
+				                    	onfocus="this.placeholder=''">
+				                </div>
+				            </div>
+
+				            <!-- project detail -->
+							<div class="md-form">
+							  <i class="fas fa-info-circle prefix"></i>
+							  <textarea id="description" class="md-textarea form-control" rows="3"></textarea>
+							  <label for="description">Project detail in brief.</label>
+							</div>
+
+				            <!-- submit btn -->
+				            <div class="form-group">
+				                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+				                    <div class="input-group-addon mt-1" style="width: 2.6rem"></div>
+				                    <button type="submit" id="submit" class="btn btn-sm btn-info">
+					            	<i class="fa fa-chevron-right mr-2"></i>Send proposal</button>
+				                </div>
+				            </div>
+						</form>
+					</div><!-- hire me form container -->				</div><!-- row -->
 			</div><!-- container -->
 		</section><!-- HIRE ME FORM & MAP VIEW-->
 
@@ -327,6 +306,7 @@
 	<script type="text/javascript" src="assets/js/jquery.easing.js"></script>
 	<script type="text/javascript" src="assets/js/wow.js"></script>
 	<script type="text/javascript" src="assets/js/typed.min.js"></script>
+	<script type="text/javascript" src="assets/js/mdb.min.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

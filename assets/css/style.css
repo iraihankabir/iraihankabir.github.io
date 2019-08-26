@@ -508,69 +508,13 @@ a[data-lightbox]:hover img{
 
 
 /*---------- SKILLS ---------*/
-.skill{
-	margin-top: 20px;
-	padding-top: 20px!important;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
-	position: relative;
-	height: auto;}
-
-.skill-container{
-	padding-top: 20px;}
-
-.skill-item{
-	margin-bottom: 20px}
-
-.skill-item h3{
-	font-family: kalam-regular;
-	color: #3c3c3c;
-	font-weight: 600;
-	font-size: 18px;}
-
-.progress-bar{
-	font-weight: 600;
-	font-size: 14px;}
-
-.skill-img-conatiner a img{
-	margin-bottom: 20px;
-	height: 60px;
-	width: 60px;}
-
-.skill-img-conatiner a{
-	margin-right: 10px;}
-
-/*-----------SCROLL TO TOP------------*/
-.scroll-up-btn-container{
-	margin-top: -60px!important;}
-
-.scroll-up-btn{
-	font-size: 16px;
-	padding: 14px 16px 14px 16px;
-	border-radius: 100%;
-	background-color: #205e30;
-	border: 4px solid #000000;}
-
-.scroll-up-btn:hover{
-	border: 3px solid #000000;}
 
 
 /* ---------- HIRE ME & MAP STYLES */
 
 .hire-me{
 	margin-top: 60px;
-	padding-top: 20px!important;
-	background: url('../img/project.jpg');
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
-	position: relative;
-	height: auto;}
+	padding-top: 20px!important;}
 
 /*------FOOTER--------*/
 .footer{
