@@ -109,4 +109,29 @@ $(document).ready(function(){
         e.preventDefault();
         $('#projectModal').modal('hide');
     });
+
+    $('#proposal-form').submit(function(e) {
+        e.preventDefault();
+        var form_data = {
+            'name': $('#name').val(),
+            'email': $('#email').val(),
+            'company': $('#company').val(),
+            'budget': $('#budget').val(),
+            'website': $('#website').val(),
+            'description': $('#description').val()
+        }
+        $('#form-error').text("Backend of this form is under construction. Come again and try. Thanks!");
+        /*$.ajax({
+            url: "http://myportfoliobackend.herokuapp.com/api/hirings/create",
+            method: 'POST',
+            data: form_data,
+            success: function(response) {
+                alert(response)
+                console.log(response)
+            },
+            error: function(response) {
+                alert("Couldn't proceed! Something went wrong.")
+            }
+        });*/
+    })
 });

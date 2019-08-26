@@ -147,22 +147,23 @@
 					  <div class="col-md-8">
 					    <div class="card-body form">
 					      <!-- Header -->
-					      <h3 class="mt-4" style="color: #1e7007!important"><i class="text-success fas fa-envelope pr-2"></i>Send a proposal:</h3>
-					      <form action="" method="post">
+					      <h2 class="mt-4" style="color: #1e7007!important"><i class="text-success fas fa-envelope pr-2"></i>Send a proposal</h2>
+					      <div class="mt-5 mb-3 text-danger" id="form-error" style="font-size: 14px">Form is under construction...</div>
+					      <form action="" method="post" id="proposal-form">
 					          <!-- Grid row -->
 					          <div class="row">
 					            <!-- Grid column -->
 					            <div class="col-md-6">
 					              <div class="md-form mb-0">
 					                <input type="text" id="name" class="form-control">
-					                <label for="name" class="">Name</label>
+					                <label for="name" class=""><span style="color: red">*</span> Name</label>
 					              </div>
 					            </div><!-- Grid column -->
 					            <!-- Grid column -->
 					            <div class="col-md-6">
 					              <div class="md-form mb-0">
 					                <input type="text" id="email" class="form-control">
-					                <label for="email" class="">Email</label>
+					                <label for="email" class=""><span style="color: red">*</span> Email</label>
 					              </div>
 					            </div><!-- Grid column -->
 					          </div><!-- Grid row -->
@@ -172,14 +173,14 @@
 					            <div class="col-md-6">
 					              <div class="md-form mb-0">
 					                <input type="text" id="company" class="form-control">
-					                <label for="company" class="">Company name</label>
+					                <label for="company" class=""><span style="color: red">*</span> Company name</label>
 					              </div>
 					            </div><!-- Grid column -->
 					            <!-- Grid column -->
 					            <div class="col-md-6">
 					              <div class="md-form mb-0">
 					                <input type="number" id="budget" class="form-control">
-					                <label for="budget" class="">Your budget</label>
+					                <label for="budget" class=""><span style="color: red">*</span> Your budget</label>
 					              </div>
 					            </div>
 					            <!-- Grid column -->
@@ -199,13 +200,20 @@
 					            <div class="col-md-12">
 					              <div class="md-form mb-0">
 					                <textarea id="description" class="form-control md-textarea" rows="3"></textarea>
-					                <label for="description">Your message</label>
-					                <a class="btn-floating btn-lg btn-success" style="background: #1e7007!important">
-					                  <i class="far fa-paper-plane"></i>
-					                </a>
+					                <label for="description"><span style="color: red">*</span> Description</label>
 					              </div>
 					            </div><!-- Grid column -->
-					      	</div><!-- Grid row -->
+					      	   </div><!-- Grid row -->
+					      	   <div class="row">
+					          	<!-- Grid column -->
+					            <div class="col-md-12 text-right">
+					              <div class="md-form mb-0">
+					                <button type="submit" id="form-submit-btn" class="btn btn-success btn-rounded btn-md">
+					                	<i class="fa fa-paper-plane mr-2"></i> Submit
+					                </button>
+					              </div>
+					            </div><!-- Grid column -->
+					      	  </div><!-- Grid row -->
 					      </form>
 					    </div>
 
