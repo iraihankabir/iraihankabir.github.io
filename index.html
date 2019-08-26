@@ -136,142 +136,133 @@
 	   
 
 		<!-- HIRE ME FORM & MAP VIEW-->
-		<section id="HIRE-ME" class="hire-me">
-			<div class="container">
-				<div class="row">
-					<!-- hire me form container -->
-					<div class="col-md-8 offset-md-2">
-						<form class="form-horizontal pt-5 pb-5" role="form" method="POST" action="">
-					        <div class="field-label-responsive">
-					            <label for="name"></label>
-					        </div>
-				            
-					        <!-- name -->
-				            <div class="form-group">
-				                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-				                    <div class="input-group-addon mt-1" style="width: 2.6rem"><i class="fa fa-user"></i></div>
-				                    <input type="text" name="name" class="form-control" id="name" 
-				                    	placeholder="Full name" onblur="this.placeholder='Full name'" 
-				                    	onfocus="this.placeholder=''">
-				                </div>
-				            </div>
+		<footer id="HIRE-ME" class="footer mb-5">
+			<!-- container -->
+			<div class="container contact-section">
+				<!-- card -->
+				<div class="card">
+					<!-- Grid row -->
+					<div class="row">
+					  <!-- Grid column: form -->
+					  <div class="col-md-8">
+					    <div class="card-body form">
+					      <!-- Header -->
+					      <h3 class="mt-4" style="color: #1e7007!important"><i class="fas fa-envelope pr-2"></i>Send a proposal:</h3>
+					      <form action="" method="post">
+					          <!-- Grid row -->
+					          <div class="row">
+					            <!-- Grid column -->
+					            <div class="col-md-6">
+					              <div class="md-form mb-0">
+					                <input type="text" id="form-contact-name" class="form-control">
+					                <label for="form-contact-name" class="">Your name</label>
+					              </div>
+					            </div><!-- Grid column -->
 
-				            <!-- email -->
-				            <div class="form-group">
-				                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-				                    <div class="input-group-addon mt-1" style="width: 2.6rem"><i class="fa fa-envelope"></i></div>
-				                    <input type="text" name="email" class="form-control" id="email" 
-				                    	placeholder="Email" onblur="this.placeholder='Email'" 
-				                    	onfocus="this.placeholder=''">
-				                </div>
-				            </div>
+					            <!-- Grid column -->
+					            <div class="col-md-6">
+					              <div class="md-form mb-0">
+					                <input type="text" id="form-contact-email" class="form-control">
+					                <label for="form-contact-email" class="">Your email</label>
+					              </div>
+					            </div>
+					            <!-- Grid column -->
 
-				            <!-- company -->
-				            <div class="form-group">
-				                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-				                    <div class="input-group-addon mt-1" style="width: 2.6rem"><i class="fa fa-briefcase"></i></div>
-				                    <input type="text" name="company" class="form-control" id="company" 
-				                    	placeholder="Company" onblur="this.placeholder='Company'" 
-				                    	onfocus="this.placeholder=''">
-				                </div>
-				            </div>
+					          </div>
+					          <!-- Grid row -->
 
-				            <!-- website/link -->
-				            <div class="form-group">
-				                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-				                    <div class="input-group-addon mt-1" style="width: 2.6rem"><i class="fa fa-link"></i></div>
-				                    <input type="text" name="website" class="form-control" id="website" 
-				                    	placeholder="Link or website" onblur="this.placeholder='Link or websitee'" 
-				                    	onfocus="this.placeholder=''">
-				                </div>
-				            </div>
+					          <!-- Grid row -->
+					          <div class="row">
 
-				            <!-- budget -->
-				            <div class="form-group">
-				                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-				                    <div class="input-group-addon mt-1" style="width: 2.6rem"><i class="fa fa-money"></i></div>
-				                    <input type="number" name="budget" class="form-control" id="budget" 
-				                    	placeholder="Budget" onblur="this.placeholder='Budget'" 
-				                    	onfocus="this.placeholder=''">
-				                </div>
-				            </div>
+					            <!-- Grid column -->
+					            <div class="col-md-6">
+					              <div class="md-form mb-0">
+					                <input type="number" id="budget" class="form-control">
+					                <label for="budget" class="">Your budget</label>
+					              </div>
+					            </div>
+					            <!-- Grid column -->
 
-				            <!-- project detail -->
-							<div class="md-form">
-							  <i class="fas fa-info-circle prefix"></i>
-							  <textarea id="description" class="md-textarea form-control" rows="3"></textarea>
-							  <label for="description">Project detail in brief.</label>
-							</div>
+					            <!-- Grid column -->
+					            <div class="col-md-6">
+					              <div class="md-form mb-0">
+					                <input type="text" id="form-contact-company" class="form-control">
+					                <label for="form-contact-company" class="">Your company</label>
+					              </div>
+					            </div>
+					            <!-- Grid column -->
 
-				            <!-- submit btn -->
-				            <div class="form-group">
-				                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-				                    <div class="input-group-addon mt-1" style="width: 2.6rem"></div>
-				                    <button type="submit" id="submit" class="btn btn-sm btn-info">
-					            	<i class="fa fa-chevron-right mr-2"></i>Send proposal</button>
-				                </div>
-				            </div>
-						</form>
-					</div><!-- hire me form container -->				</div><!-- row -->
+					          </div>
+					          <!-- Grid row -->
+
+					          <!-- Grid row -->
+					          <div class="row">
+
+					            <!-- Grid column -->
+					            <div class="col-md-12">
+					              <div class="md-form mb-0">
+					                <textarea id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
+					                <label for="form-contact-message">Your message</label>
+					                <a class="btn-floating btn-lg btn-success" style="background: #1e7007!important">
+					                  <i class="far fa-paper-plane"></i>
+					                </a>
+					              </div>
+					            </div>
+					            <!-- Grid column -->
+
+					      </div>
+					      <!-- Grid row -->
+					      </form>
+					    </div>
+
+					  </div><!-- Grid column: form -->
+
+					  <!-- Grid column contact info-->
+					  <div class="col-md-4">
+
+					    <div class="card-body contact text-center h-100 white-text">
+
+					      <h3 class="my-4 pb-2">Contact information</h3>
+					      <ul class="text-lg-left list-unstyled ml-4">
+					        <li>
+					          <p><i class="fas fa-map-marker-alt pr-2"></i>MB Hall, RU, Rajshahi, BD</p>
+					        </li>
+					        <li>
+					          <p><i class="fas fa-phone pr-2"></i>+8801744593190</p>
+					        </li>
+					        <li>
+					          <p><i class="fas fa-envelope pr-2"></i>r.kabir01@pm.me</p>
+					        </li>
+					      </ul>
+					      <hr class="hr-light my-4">
+					      <ul class="list-inline text-center list-unstyled">
+					        <li class="list-inline-item">
+					          <a class="p-2 fa-lg li-ic" href="https://www.linkedin.com/in/rk4bir/" target="_blank">
+					            <i class="fab fa-linkedin-in"> </i>
+					          </a>
+					        </li>
+					        <li class="list-inline-item">
+					          <a class="p-2 fa-lg tw-ic" href="https://facebook.com/rk4bir" target="_blank">
+					            <i class="fab fa-facebook"></i>
+					          </a>
+					        </li>
+					        <li class="list-inline-item">
+					          <a class="p-2 fa-lg ins-ic" href="https://twitter.com/rk4bir" target="_blank">
+					            <i class="fab fa-twitter"> </i>
+					          </a>
+					        </li>
+					      </ul>
+
+					    </div>
+
+					  </div>
+					  <!-- Grid column -->
+
+					</div><!-- Grid row -->
+
+				</div><!-- card -->
 			</div><!-- container -->
-		</section><!-- HIRE ME FORM & MAP VIEW-->
-
-		<!-- FOOTER START -->
-		<footer class="footer">
-			<div class="text-center scroll-up-btn-container">
-		         <a id="scrollToTop" href="#toTop" class="scroll-up-btn">
-		      		<span class="fa fa-chevron-up text-white-smoke"></span>
-		      	</a>
-		    </div>
-			<div class="container contact-container mt-5">
-				<div class="text-center">
-					<h1 class="contact-title">Contact Me</h1>
-				</div>
-				<div class="contact-content row text-center">
-					<div class="col-md-4 contact-item">
-						<div>
-							<a class="email" href="mailto:r.kabir01@pm.me">
-								<i class="fa fa-envelope"></i>
-							</a>
-							<p class="contact-text">
-								<a href="mailto:r.kabir01@pm.me">
-									r.kabir01@pm.me
-								</a>
-							</p>
-						</div>
-					</div>
-					<div class="col-md-4 contact-item">
-						<div class="footer-social-icons text-center wow fadeInUp" data-wow-duration="1000ms"
-							data-wow-delay="600ms">
-
-				            <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/rk4bir/">
-				              	<i class="fab fa-linkedin"></i>
-				            </a>
-				            <a id="facebook" target="_blank" href="https://facebook.com/rk4bir">
-				              	<i class="fab fa-facebook-f"></i>
-				            </a>
-				            <a id="twitter" target="_blank" href="https://twitter.com/rk4bir">
-				              	<i class="fab fa-twitter"></i>
-				            </a>
-				            <p class="contact-text">
-								Social Links
-							</p>
-
-			          	</div>
-					</div>
-					<div class="col-md-4 contact-item">
-						<div>
-							<a class="location" href="javascript:void(0);">
-								<i class="fa fa-map-marked-alt"></i>
-							</a>
-							<p class="contact-text">
-								Rajshahi, BD
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer><!-- FOOTER END -->
+		</footer><!-- HIRE ME FORM & MAP VIEW-->
 	</main>
 
 	<div id="loader">
