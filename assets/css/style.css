@@ -254,16 +254,6 @@ label {padding-left: 5px}
   }
 }
 
-.divider{
-	margin-top: -3px!important;
-	max-width: 10rem;
-	margin-left: auto;
-	margin-right: auto;
-	border-top-width: 1px;
-	border-bottom-width: 1px;
-	border-style: solid;
-	height: 0.125rem;
-	border-color: #1e7007;}
 
 .text-white-smoke{
 	color:#F6F6F6!important;}
@@ -408,122 +398,6 @@ label {padding-left: 5px}
 
 
 
-
-/*----------- PROJECT ---------*/
-
-.project{
-	margin-top: 60px;
-	padding-top: 20px!important;
-	background: url('../img/project.jpg');
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
-	position: relative;
-	height: auto;}
-
-.project-img{
-	width: 100%;
-	border-radius: 5px;
-	height: 250px}
-
-.project-img:hover{
-	transition: all .2s;
-	transform: scale(0.99)}
-
-.project-modal-title{
-	color:#000000;
-	text-transform: uppercase;
-	font-family:kalam-bold;
-	font-size: 30px;}
-
-.project-modal-img{
-	width: 100%;
-	max-height: 400px;
-	margin-bottom: 20px;}
-
-
-a[data-lightbox]{
-	position: relative;
-	display: block;
-	text-align: center;
-}
-a[data-lightbox]:hover::before{
-	content:"+";
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-	font-size:32px;
-	width:50px;
-	height:50px;
-	margin-left: 110px;
-	border-radius: 50%;
-	background:rgba(0,0,0,.6);
-	color:#FFF;
-	font-weight:100;
-	z-index: 1;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-}
-a[data-lightbox]:hover img{
-	opacity: 0.6;
-	-webkit-animation-fill-mode: none;
-	animation-fill-mode:none;
-}
-#lightbox-modal .modal-dialog{
-	width:90%;
-	max-width:900px;
-	margin:30px auto 0;
-}
-#lightbox-modal .modal-dialog img{
-	margin: 0 auto;
-}
-.lightbox-caption{
-	padding: 20px;
-	color: #FFF;
-	background: rgba(0,0,0,.5);
-	position: absolute;
-	left: 15px;
-	right: 15px;
-	bottom: 5px;
-}
-.close-lightbox{
-	display: none;
-	font-size: 40px;
-	position: absolute;
-	top:8px;
-	right:20px;
-	z-index: 20;
-}
-.next-lightbox, .prev-lightbox{
-	display: inline-block;
-	width:0;
-	height:0;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	transition: all .2s ease-in-out;
-	position: absolute;
-	top:50%;
-}
-.next-lightbox{
-	right:25px;
-	border-left: 20px solid rgba(255,255,255,.4);
-}
-.prev-lightbox{
-	left:25px;
-	border-right:20px solid rgba(255,255,255,.4);
-}
-.prev-lightbox:hover, .next-lightbox:hover{
-	border-right-color:rgba(255,255,255,.9);
-	border-left-color:rgba(255,255,255,.9);
-}
-
-
-
-/*---------- SKILLS ---------*/
-
-
 /*------FOOTER: hiring form--------*/
 .footer{
 	padding-top: 50px;
@@ -605,31 +479,6 @@ a[data-lightbox]:hover img{
 
 #facebook{
 	background-color: #29487d;}
-
-/*--------FOOTER----------
-
-.footer{
-	background-color: #1e1e1e;}
-
-.footer-container{
-	padding-top: 15px;}
-.footer-social-icons{
-
-}
-.footer-social-icons a{
-	margin-bottom: 15px;
-	display: inline-block;
-	background-color: none;
-	color: #F6F6F6 !important;
-	border-radius: 100%;
-	text-align: center;
-	font-size: 1.2rem;
-	line-height: 2.0rem;
-	height: 2.0rem;
-	width: 2.0rem;
-	margin-right: 5px;}
-*/
-
 
 
 
