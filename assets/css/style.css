@@ -1,16 +1,16 @@
 /* FONTS */
 @font-face {
     font-family: kalam-regular;
-    src: url(../fonts/kalam.regular.ttf);
+    src: url(../font/kalam.regular.ttf);
 }
 @font-face {
     font-family: kalam-light;
-    src: url(../fonts/kalam.light.ttf);
+    src: url(../font/kalam.light.ttf);
 }
 
 @font-face {
     font-family: kalam-bold;
-    src: url(../fonts/kalam.bold.ttf);
+    src: url(../font/kalam.bold.ttf);
 }
 
 
