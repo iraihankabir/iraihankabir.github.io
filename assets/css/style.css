@@ -377,27 +377,6 @@ label {padding-left: 5px}
 
 
 
-/*----------- ARTICLE ---------*/
-.article{
-	padding-top: 60px;}
-
-.article-container{}
-
-.article-title{
-	text-transform: uppercase;
-	padding-top: 20px;
-	font-size: 30px;
-	font-family: kalam-bold;
-	color: #000000;}
-
-.article-content{
-	font-size: 16px;
-	color: #5a5a5a;
-	margin-top: 50px;}
-
-
-
-
 /*------FOOTER: hiring form--------*/
 .footer{
 	padding-top: 50px;
@@ -410,66 +389,8 @@ label {padding-left: 5px}
 	opacity: 0.90;
 	padding-bottom: 60px;}
 
-.contact-container{
-	background: transparent;
-}
-.contact-content{
-	font-size: 16px;
-	margin-top: 50px;}
-
-
-
-.contact-title{
-	text-transform: uppercase;
-	padding-top: 20px;
-	font-size: 30px;
-	font-family: kalam-bold;
-	color: #e8e3e3;
-	font-weight: 1000}
-
-.contact-item{
-	justify-content: center;
-	align-content: center;
-	padding-right: 10px}
-
-.contact-text{
-	font-size: 20px;
-	font-family: kalam-bold;
-	color: #F6F6F6}
-
-.contact-text a{
-	font-size: 20px;
-	color: #F6F6F6}
-
-.location, .phone, .email{
-	text-decoration: none;
-	font-size: 50px;
-	padding-bottom: 20px;}
-
-
-.email i{
-	color: #d80a15;}
-
-.phone i{
-	color: #d80a15}
-
-.location i{
-	color: #d80a15;}
-
-.footer-social-icons{}
-
-.footer-social-icons a{
-	margin-bottom: 15px;
-	display: inline-block;
-	background-color: none;
-	color: #ffffff !important;
-	border-radius: 100%;
-	text-align: center;
-	font-size: 1.2rem;
-	line-height: 2.3rem;
-	height: 2.3rem;
-	width: 2.3rem;
-	margin-right: 7px;}
+.contact-info {
+	background: #343b35 !important;}
 
 #linkedin{
 	background-color: #055884;}
