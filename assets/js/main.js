@@ -7,6 +7,17 @@ function clearFormData() {
     $('#description').val('');
 }
 
+function getFormData() {
+    return form_data = {
+            'name': $('#name').val(),
+            'email': $('#email').val(),
+            'company': $('#company').val(),
+            'budget': $('#budget').val(),
+            'website': $('#website').val(),
+            'description': $('#description').val()
+        }
+}
+
 function showProjectDetail(img, title, content){
     $('#modalTitle').html(title);
     $("#project-modal-img").attr('src', img);
@@ -121,19 +132,12 @@ $(document).ready(function(){
 
     $('#form-submit-btn').click(function(e) {
         e.preventDefault();
-        var form_data = {
-            'name': $('#name').val(),
-            'email': $('#email').val(),
-            'company': $('#company').val(),
-            'budget': $('#budget').val(),
-            'website': $('#website').val(),
-            'description': $('#description').val()
-        }
+        
         $('#form-error').fadeOut().text("Backend of this form is under construction. Come again and try. Thanks!").fadeIn();
         $.ajax({
             url: "http://myportfoliobackend.herokuapp.com/api/hirings/create",
             method: 'POST',
-            data: form_data,
+            data: getFormData(),
             success: function(response) {
                 if (response.status == 'success') {
                     clearFormData();
