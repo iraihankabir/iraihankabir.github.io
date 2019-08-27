@@ -132,18 +132,16 @@ $(document).ready(function(){
 
     $('#form-submit-btn').click(function(e) {
         e.preventDefault();
-        
-        $('#form-error').fadeOut().text("Backend of this form is under construction. Come again and try. Thanks!").fadeIn();
         $.ajax({
-            url: "http://myportfoliobackend.herokuapp.com/api/hirings/create",
+            url: "https://myportfoliobackend.herokuapp.com/api/hirings/create",
             method: 'POST',
             data: getFormData(),
             success: function(response) {
                 if (response.status == 'success') {
                     clearFormData();
-                    $('#form-error').addClass('text-success').html("<strong style='text-transform: uppercase'>" + response.status + ": </strong>" + response.message);
+                    $('#form-error').fadeOut().addClass('text-success').html("<strong style='text-transform: uppercase'>" + response.status + ": </strong>" + response.message).fadeIn();
                 } else {
-                    $('#form-error').removeClass('text-success').html("<strong style='text-transform: uppercase'>" + response.status + ": </strong>" + response.message);
+                    $('#form-error').fadeOut().removeClass('text-success').html("<strong style='text-transform: uppercase'>" + response.status + ": </strong>" + response.message).fadeIn();
                 }
             },
             error: function(response) {
