@@ -1,3 +1,12 @@
+function clearFormData() {
+    $('#name').val('');
+    $('#email').val('');
+    $('#company').val('');
+    $('#budget').val('');
+    $('#website').val('');
+    $('#description').val('');
+}
+
 function showProjectDetail(img, title, content){
     $('#modalTitle').html(title);
     $("#project-modal-img").attr('src', img);
@@ -121,17 +130,21 @@ $(document).ready(function(){
             'description': $('#description').val()
         }
         $('#form-error').fadeOut().text("Backend of this form is under construction. Come again and try. Thanks!").fadeIn();
-        /*$.ajax({
+        $.ajax({
             url: "http://myportfoliobackend.herokuapp.com/api/hirings/create",
             method: 'POST',
             data: form_data,
             success: function(response) {
-                alert(response)
-                console.log(response)
+                if (response.status == 'success') {
+                    clearFormData();
+                    $('#form-error').addClass('text-success').html("<strong style='text-transform: uppercase'>" + response.status + ": </strong>" + response.message);
+                } else {
+                    $('#form-error').removeClass('text-success').html("<strong style='text-transform: uppercase'>" + response.status + ": </strong>" + response.message);
+                }
             },
             error: function(response) {
                 alert("Couldn't proceed! Something went wrong.")
             }
-        });*/
+        });
     })
 });
