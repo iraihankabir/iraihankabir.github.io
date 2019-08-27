@@ -148,5 +148,6 @@ $(document).ready(function(){
                 alert("Couldn't proceed! Something went wrong.")
             }
         });
+        window.location.href = "#form-header";
     })
 });
