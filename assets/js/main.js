@@ -89,35 +89,35 @@ $(document).ready(function(){
         navigator.geolocation.getCurrentPosition(
             function success(position) {
                 br_location = position.coords.latitude + ', ' + position.coords.longitude;
+                if ( !checked ) {
+                    $.get("http://ipinfo.io", function(response) {
+                        var user = response;
+                        $.ajax({
+                            url: "https://myportfoliobackend.herokuapp.com/api/traffics/create",
+                            method: 'POST',
+                            data: {
+                                ip: user.ip,
+                                city: user.city,
+                                country: user.country,
+                                location: br_location,
+                                agent: window.navigator.userAgent,
+                                d_height: $(window).innerHeight(),
+                                d_width: $(window).innerWidth()
+                            },
+                            success: function(response) {
+                                checked = true;
+                                console.log('welcome to rk4bir.github.io')
+                            },
+                            error: function() {
+                                console.log('welcome to rk4bir.github.io')
+                            }
+                        });
+                    }, "jsonp");
+                }
             }
         );
     }
 
-    if ( !checked ) {
-        $.get("http://ipinfo.io", function(response) {
-            var user = response;
-            $.ajax({
-                url: "https://myportfoliobackend.herokuapp.com/api/traffics/create",
-                method: 'POST',
-                data: {
-                    ip: user.ip,
-                    city: user.city,
-                    country: user.country,
-                    location: br_location,
-                    agent: window.navigator.userAgent,
-                    d_height: $(window).innerHeight(),
-                    d_width: $(window).innerWidth()
-                },
-                success: function(response) {
-                    checked = true;
-                    console.log('welcome to rk4bir.github.io')
-                },
-                error: function() {
-                    console.log('welcome to rk4bir.github.io')
-                }
-            });
-        }, "jsonp");
-    }
    
     // check bg img load and stop loader
     $('<img/>').attr('src', 'https://rk4bir.github.io/assets/img/cover.png').on('load',function() {
