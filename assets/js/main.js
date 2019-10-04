@@ -72,7 +72,7 @@ $(document).ready(function() {
     $("#form-submit-btn").click(function(t) {
         t.preventDefault();
         $.ajax({
-            url: "https://myportfoliobackend.herokuapp.com/api/hirings/create",
+            url: "https://rk4bir-github-io-backend.herokuapp.com/api/hirings/create",
             method: "POST",
             data: getFormData(),
             success: function(response) {
