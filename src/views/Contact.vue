@@ -54,7 +54,7 @@
           <v-textarea
             color="green"
             background-color="transparent"
-            :counter="140"
+            :counter="1000"
             :error-messages="bodyErrors"
             v-model="body"
             label="Your message"
@@ -66,7 +66,7 @@
             type="submit"
             color="green"
             class="white--text mr-2"
-            :disabled=" (body.length<=20)"
+            :disabled=" (body.length<=140)"
           >SEND MESSAGE</v-btn>
           <v-btn color="orange" @click="clear">clear</v-btn>
         </form>
@@ -114,7 +114,7 @@ export default {
   validations: {
     name: { required, maxLength: maxLength(20) },
     email: { required, email },
-    body: { required, minLength: minLength(20) }
+    body: { required, minLength: minLength(140) }
   },
   data () {
     return {
@@ -154,8 +154,8 @@ export default {
       const errors = []
       if (!this.$v.body.$dirty) return errors
       !this.$v.body.minLength &&
-        errors.push('Text must be at least 20 characters long')
-      !this.$v.body.required && errors.push('Text is required')
+        errors.push('Message must be at least 140 characters long')
+      !this.$v.body.required && errors.push('Message is required')
       return errors
     }
   }
