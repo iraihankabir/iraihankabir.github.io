@@ -3,10 +3,10 @@ name: Node CI
 on: 
   push:
     branches:
-       - gh-pages # execute `deploy job` on push@gh-pages
+       - master # execute `deploy job` on push@gh-pages
   pull_request:
     branches: 
-      - master    # execute `test job` on pull_request@master
+      - dev    # execute `test job` on pull_request@master
 
 jobs:
   test:

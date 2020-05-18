@@ -36,7 +36,7 @@
             background-color="transparent"
             v-model="name"
             :error-messages="nameErrors"
-            label="Name"
+            label="Full name"
             required
             @blur="$v.name.$touch()"
           ></v-text-field>
@@ -54,10 +54,10 @@
           <v-textarea
             color="green"
             background-color="transparent"
-            :counter="200"
+            :counter="140"
             :error-messages="bodyErrors"
             v-model="body"
-            label="Textarea"
+            label="Your message"
             name="body"
             @blur="$v.body.$touch()"
           ></v-textarea>
