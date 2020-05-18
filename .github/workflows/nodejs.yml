@@ -31,7 +31,7 @@ jobs:
             yarn lint 
             
             echo "Testing production"
-            yarn -s dev
+            yarn -s serve
             
             echo "Producing SPA in dist directory for production"
             yarn build
@@ -58,14 +58,13 @@ jobs:
             yarn lint
             
             echo "Testing production"
-            yarn -s dev
+            yarn -s serve
             
             echo "Producing SPA in dist directory for production"
             yarn build
             
             echo "Removing unwanted files"
-            rm -rf vue.config.js babel.config.js public/ src/ yarn-error.log deploy.sh README.md vue.config.js yarn.lock
+            rm -rf package.json .gitignore vue.config.js babel.config.js public/ src/ yarn-error.log deploy.sh LICENSE README.md yarn.lock
             
             echo "Moving dist/ to root directory and removing dist/ dir"
             mv dist/* . && rmdir dist/
-
