@@ -3,10 +3,7 @@ name: Node CI
 on: 
   push:
     branches:
-       - master # execute `deploy job` on push@gh-pages
-  pull_request:
-    branches: 
-      - dev    # execute `test job` on pull_request@master
+       - master # execute `deploy job` on push@master
 
 jobs:
   test:
@@ -19,7 +16,6 @@ jobs:
     steps:
       - name: test pull_request
         uses: actions/checkout@v1
-        if: github.event_name == 'pull_request'        
         with:
           node-version: '12.x'
           run: |
@@ -44,9 +40,8 @@ jobs:
       matrix:
         node-version: [12.x]
     steps:
-      - name: deployment to gh-pages
+      - name: deployment to master
         uses: actions/checkout@v1
-        if: github.event_name == 'push'
         with:
           node-version: '12.x'
           run: |
