@@ -3,8 +3,7 @@
     <v-layout row justify-center align-center wrap class="mt-5 pt-2">
       <v-flex xs12 sm12 md12 lg12 xl12>
         <h2 class="pl-4 mt-5 text-center">
-          <span>My</span>
-          <span class="green--text">Services</span>
+          <span>My</span> <span class="green--text">Services</span>
         </h2>
       </v-flex>
       <v-flex class="mt-5" v-for="service in services" :key="service.src" xs6 sm3 md3 lg3 xl3>

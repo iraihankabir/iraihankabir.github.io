@@ -2,7 +2,7 @@
   <v-app :dark="goDark">
     <v-content>
       <v-container align-center>
-        <Header :goDark="goDark" :appBarBG="appBarBG" @changeTheme="updateTheme($event)"/>
+        <Header :appBarBG="appBarBG" @changeTheme="updateTheme($event)"/>
 
         <transition
           name="router-animation"
@@ -51,23 +51,10 @@ export default {
       goDark: false,
       appBarBG: '#ffffff'
     }
-  },
-  methods: {
-    updateTheme (updatedTheme) {
-      this.goDark = !updatedTheme
-      this.$vuetify.theme.dark = this.goDark
-
-      // change app bar bg color
-      if ( this.goDark == true ) {
-        this.appBarBG = '#121212'
-      } else {
-        this.appBarBG = '#ffffff'
-      }
-    }
   }
 }
 </script>
 <style>
-@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css";
-@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+  @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css";
+  @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 </style>

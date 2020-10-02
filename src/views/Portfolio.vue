@@ -20,28 +20,25 @@
                 height="230"
                 lazy-src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif"
               ></v-img>
-              <v-card-title primary-title class="justify-center">{{project.title}}</v-card-title>
+              <v-card-title style="font-size: 1rem!important" primary-title class="justify-center">{{project.title}}</v-card-title>
             </v-card>
           </v-flex>
         </template>
         <v-card v-if="project.dialog">
           <v-img :src="project.poster"></v-img>
-          <v-card-text>
-            <h3 class="headline mb-2 mt-3">
-              <span>Technology</span>
-            </h3>
-            <v-chip class='mr-2' color="green" text-color="white">{{project.tech.tech1}}</v-chip>
-            <v-chip class='mr-2' color="green" text-color="white">{{project.tech.tech2}}</v-chip>
-            <v-chip class='mr-2' color="green" text-color="white">{{project.tech.tech3}}</v-chip>
-            <v-chip class='mr-2' color="green" text-color="white">{{project.tech.tech4}}</v-chip>
+          <v-card-text class="mt-4 text-center">
+            <span v-for="tag in project.tags" :key="tag.title">
+              <v-chip class='mr-2' style="max-width: 200px" color="green" text-color="white">{{tag.title}}</v-chip>
+            </span>
+            
           </v-card-text>
-          <v-card-actions >
-            <v-btn flat large dark color="green" :href="project.git" target="_blank">
-              <v-icon left>fab fa-git</v-icon>Source
-            </v-btn>
-            <v-btn large flat dark color="green" :href="project.demo" target="_blank">
-              <v-icon left>fas fa-desktop</v-icon>Demo
-            </v-btn>
+          <v-card-actions  class="justify-center">
+            <a style="text-decoration: none; font-size: 1.2rem" class="green--text mr-2 font-weight-bold" :href="project.git" target="_blank">
+              Source
+            </a> | 
+            <a style="text-decoration: none; font-size: 1.2rem" class="ml-2 green--text font-weight-bold" :href="project.demo" target="_blank">
+              Demo
+            </a>
           </v-card-actions>
         </v-card>
       </v-dialog>
@@ -83,93 +80,121 @@ export default {
       projects: [
         {
           dialog: false,
-          title: 'Tic Tac Toe | Project',
-          git: 'https://github.com/rk4bir/tic-tac-toe',
-          demo: 'https://rk4bir.github.io/tic-tac-toe/',
-          tech: {
-            tech1: 'JavaScript',
-            tech2: 'Bootstrap',
-            tech3: 'CSS',
-            tech4: 'HTML'
-          },
-          poster: require('@/assets/portfolio/tic-tac-toe.jpg')
+          title: 'Electricity Provider & Consumer Client',
+          git: '#!',
+          demo: '#!',
+          tags: [
+            { title: "JavaScript" }, 
+            { title: "VueJS" }, 
+            { title: "Vuex" }, 
+            { title: "Axios" },
+          ],
+          poster: require('@/assets/portfolio/morpheus.gif')
         },
         {
           dialog: false,
-          title: 'Vueather | Project',
-          git: 'https://github.com/rk4bir/vueather',
-          demo: 'https://rk4bir.github.io/vueather/',
-          tech: {
-            tech1: 'JavaScript',
-            tech2: 'Vue.JS',
-            tech3: 'Vuetify',
-            tech4: 'CSS'
-          },
-          poster: require('@/assets/portfolio/vueather.png')
+          title: 'Electricity Provider & Consumer API',
+          git: '#!',
+          demo: '#!',
+          tags: [
+            { title: "Google Cloud Functions" }, 
+            { title: "NodeJS" }, 
+            { title: "ExpressJS" }, 
+            { title: "Firestore" },
+            { title: "JWT Token" },
+            {  title: "Cloud Firestore" }
+          ],
+          poster: require('@/assets/portfolio/morpheus_api.png')
         },
         {
           dialog: false,
-          title: 'Arun-HPCC Portal | Web',
+          title: 'Forex Listing Site',
+          git: '#!',
+          demo: 'http://bestecn.com/',
+          tags: [
+            { title: "PHP" }, 
+            { title: "jQuery" }, 
+            { title: "Bootstrap" },
+            { title: "python" }, 
+            { title: "Data Scrappig" },
+          ],
+          poster: require('@/assets/portfolio/bestecn.png')
+        },
+        {
+          dialog: false,
+          title: 'Arun-HPCC Portal',
           git: 'https://github.com/rk4bir/',
           demo: 'https://arun-hpcc.ru.ac.bd/',
-          tech: {
-            tech1: 'Python',
-            tech2: 'Django',
-            tech3: 'JavaScript',
-            tech4: 'MDBOOTSTRAP'
-          },
+          tags: [
+            { title: "Python" }, 
+            { title: "Django" }, 
+            { title: "MDBootstrap" }, 
+            { title: "JavaScript" },
+            { title: "MySQL" },
+          ],
           poster: require('@/assets/portfolio/arun-hpcc-portal.png')
         },
         {
           dialog: false,
-          title: 'Arun-HPCC Docs | Web',
+          title: 'Arun-HPCC Docs',
           git: 'https://gitlab.com/arun-hpcc/arun-hpcc.gitlab.io',
           demo: 'http://arun-hpcc.gitlab.io/',
-          tech: {
-            tech1: 'JavaScript',
-            tech2: 'Vue.JS',
-            tech3: 'VuePress',
-            tech4: 'Markdown'
-          },
+          tags: [
+            { title: "JavaScript" }, 
+            { title: "VueJS" }, 
+            { title: "VuePress" }, 
+          ],
           poster: require('@/assets/portfolio/arun-hpcc-docs.png')
         },
         {
           dialog: false,
-          title: 'Wordbridge Ltd. | Web',
-          git: 'https://github.com/rk4bir',
-          demo: 'https://wordbridge.ltd/',
-          tech: {
-            tech1: 'Python',
-            tech2: 'Django',
-            tech3: 'jQuery',
-            tech4: 'Bootstrap'
-          },
+          title: 'Wordbridge Ltd.',
+          git: '#!',
+          demo: '#!',
+          tags: [
+            { title: "Python" }, 
+            { title: "Django" }, 
+            { title: "jQuery" }, 
+            { title: "Bootstrap" },
+            { title: "MySQL" },
+          ],
           poster: require('@/assets/portfolio/wordbridge.jpg')
         },
         {
           dialog: false,
-          title: 'Emedicoplus | Web',
-          git: 'https://github.com/rk4bir',
-          demo: 'https://emedicoplus.com/',
-          tech: {
-            tech1: 'Python',
-            tech2: 'Django',
-            tech3: 'jQuery',
-            tech4: 'MDBootstrap'
-          },
+          title: 'Emedicoplus',
+          git: '#!',
+          demo: '#!',
+          tags: [
+            { title: "Python" }, 
+            { title: "Django" }, 
+            { title: "jQuery" }, 
+            { title: "Bootstrap" },
+            { title: "MySQL" },
+          ],
           poster: require('@/assets/portfolio/emedicoplus.png')
         },
         {
           dialog: false,
-          title: 'Pandemic Live | App',
+          title: 'Tic Tac Toe',
+          git: 'https://github.com/rk4bir/tic-tac-toe',
+          demo: 'https://rk4bir.github.io/tic-tac-toe/',
+          tags: [
+            { title: "JavaScript" }
+          ],
+          poster: require('@/assets/portfolio/tic-tac-toe.jpg')
+        },
+        {
+          dialog: false,
+          title: 'Pandemic Live',
           git: 'https://github.com/rk4bir/pandemic-live',
           demo: 'https://youtu.be/jIMlt_Z3GgI',
-          tech: {
-            tech1: 'Flutter',
-            tech2: 'Dart',
-            tech3: 'charts_flutter',
-            tech4: 'API'
-          },
+          tags: [
+            { title: "Dart" }, 
+            { title: "Flutter" }, 
+            { title: "Android" }, 
+            { title: "API" },
+          ],
           poster: require('@/assets/portfolio/pandemic-live.png')
         },
       ]

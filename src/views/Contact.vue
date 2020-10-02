@@ -3,8 +3,7 @@
     <v-layout row justify-center align-center wrap class="mt-4 pt-5">
       <v-flex xs12 sm12 md6 lg6 xl6>
         <h2 class="pb-4 mt-2">
-          <span>Contact</span>
-          <span class="green--text">Me</span>
+          <span>Contact</span> <span class="green--text">Me</span>
         </h2>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="green" left>fa fa-map-marker</v-icon>
@@ -13,15 +12,17 @@
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="green" left>fa fa-check-circle</v-icon>
-          <span>Freelance</span>
-          <span class="green--text">Available</span>
+          <span>Freelance</span> <span class="green--text">Available</span>
+        </div>
+        <div class="py-4 subheading font-weight-bold">
+          <v-icon large color="green" left>fa fa-check-circle</v-icon>
+          <span>Contract</span> <span class="green--text">Available</span>
         </div>
       </v-flex>
 
       <v-flex xs12 sm12 md6 lg6 xl6>
         <h2 class="pb-4 mb-4">
-          <span>Send</span>
-          <span class="green--text">Message</span>
+          <span>Get a</span> <span class="green--text">quote</span>
         </h2>
 
         <form method="POST" action="https://formspree.io/xqkyeper">
@@ -61,7 +62,7 @@
             type="submit"
             color="green"
             class="white--text mr-2"
-            :disabled=" (body.length<=20)"
+            :disabled=" (body.length<=140)"
           >SEND MESSAGE</v-btn>
           <v-btn color="orange" @click="clear">clear</v-btn>
         </form>
@@ -107,9 +108,9 @@ export default {
   },
   mixins: [validationMixin],
   validations: {
-    name: { required, maxLength: maxLength(20) },
+    name: { required, maxLength: maxLength(32) },
     email: { required, email },
-    body: { required, minLength: minLength(20) }
+    body: { required, minLength: minLength(140) }
   },
   data () {
     return {
@@ -149,7 +150,7 @@ export default {
       const errors = []
       if (!this.$v.body.$dirty) return errors
       !this.$v.body.minLength &&
-        errors.push('Text must be at least 20 characters long')
+        errors.push('Text must be at least 140 characters long')
       !this.$v.body.required && errors.push('Text is required')
       return errors
     }

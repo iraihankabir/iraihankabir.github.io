@@ -46,27 +46,15 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+
     <v-app-bar flat dense :color="appBarBG" scroll-off-screen fixed elevation='0'>
       <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title class="headline font-weight-bold">
-        <span class="font-weight-light">Raihan</span>
-        <span class="green--text">Kabir</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn @click="changeTheme" depressed small icon class="hidden-md-and-up">
-        <v-icon v-if="goDark==true">fas fa-sun</v-icon>
-        <v-icon v-else>fa fa-moon-o</v-icon>
-      </v-btn>
-      <v-toolbar-items class="hidden-sm-and-down">
+      <v-toolbar-items class="hidden-sm-and-down" style="width: 100%; justify-content: center!important; text-align: center;">
         <v-btn text to="/" active-class="green--text headline">Home</v-btn>
         <v-btn text to="/resume" active-class="green--text headline">Resume</v-btn>
         <v-btn text to="/services" active-class="green--text headline">Services</v-btn>
         <v-btn text to="/portfolio" active-class="green--text headline">Portfolio</v-btn>
         <v-btn text to="/contact" active-class="green--text headline">Contact</v-btn>
-        <v-btn @click="changeTheme" depressed small icon>
-          <v-icon v-if="goDark==true" class='white--text'>fa fa-sun-o</v-icon>
-          <v-icon v-else>fa fa-moon-o</v-icon>
-        </v-btn>
       </v-toolbar-items>
     </v-app-bar>
   </div>
@@ -75,9 +63,6 @@
 <script>
 export default {
   props: {
-    goDark: {
-      type: Boolean
-    },
     appBarBG: {
       type: String
     }
@@ -86,14 +71,10 @@ export default {
     return {
       drawer: null,
     }
-  },
-  methods: {
-    changeTheme () {
-      this.$emit('changeTheme', this.goDark)
-    }
   }
 }
 </script>
 
-<style >
+<style scoped>
+
 </style>
