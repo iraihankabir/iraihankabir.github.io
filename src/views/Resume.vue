@@ -190,20 +190,6 @@
         Flutter
         <v-progress-linear v-model="flutter" :buffer-value="bufferValue" color="green" height="16"></v-progress-linear>
       </v-flex>
-      <div class="mt-5 pt-5">
-        <v-btn
-          href="https://drive.google.com/file/d/1E5u1Ix61zscfVGrX8HM7t7E8_gx4pe7X/view?usp=sharing"
-          target="_blank"
-          color="green"
-          dark
-          large
-          style="text-decoration: none; color: #f5f5f5!important"
-          elevation='0'
-        >
-          Download Resume
-          <v-icon right dark>fa fa-download</v-icon>
-        </v-btn>
-      </div>
     </v-layout>
   </v-layout>
 </template>

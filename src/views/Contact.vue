@@ -12,11 +12,6 @@
           <span class="green--text">Bangladesh</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
-          <v-icon large color="green" left>fa fa-envelope</v-icon>
-          <span>r.kabir01@</span>
-          <span class="green--text">pm.me</span>
-        </div>
-        <div class="py-4 subheading font-weight-bold">
           <v-icon large color="green" left>fa fa-check-circle</v-icon>
           <span>Freelance</span>
           <span class="green--text">Available</span>

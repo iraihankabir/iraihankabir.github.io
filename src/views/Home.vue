@@ -3,7 +3,6 @@
     <v-container>
       <v-row class="mt-5 p-5">
         <v-col xs='8' offset-xs='2' sm='8' offset-sm='2' md='6' offset-md='3' lg='4' offset-lg='4' class="align-center text-center p-5">
-          <!-- <v-img src="../assets/rk4bir_green.svg" aspect-ratio="2.4" contain></v-img> -->
           <VueCompareImage
             class="hidden-md-and-down"
             hover
