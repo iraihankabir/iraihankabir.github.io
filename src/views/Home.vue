@@ -42,13 +42,13 @@
               >
                 <div>
                   <p>I am a full stack developer with extensive experience with linux system. I have played with a lot of tools and technologies. However, I like to call these tools and tech. as my primary skills for software development-</p>
-
                   <!-- skills -->
-                  <strong style="color: green">Python</strong> ➞ Django, DRF, Flask, Celery, Redis<br>
-                  <strong style="color: green">JavaScript</strong> ➞ jQuery, Vue, Nuxt, Node, Express<br>
-                  <strong style="color: green">Database</strong> ➞ PostgreSQL, MySQL, Firestore, MongoDB, SQLite3<br>
-                  <strong style="color: green">Others</strong> ➞ Linux, Gunicorn, Supervisor, Nginx, Apache, Virtual Environment, Git, CI-CD<br><br>
-
+                  <p>
+                    <strong style="color: green">Python</strong> ➞ Django, DRF, Flask, Celery, Redis<br>
+                    <strong style="color: green">JavaScript</strong> ➞ jQuery, Vue, Nuxt, Node, Express<br>
+                    <strong style="color: green">Database</strong> ➞ PostgreSQL, MySQL, Firestore, MongoDB, SQLite3<br>
+                    <strong style="color: green">Others</strong> ➞ Linux, Gunicorn, Supervisor, Nginx, Apache, Virtual Environment, Git, CI-CD
+                  </p><br>
                   <p>Also, I am very comfortable with HTML5, CSS3 and some cutting edge front-end technologies. Apart from development I can deploy apps to cloud providers like Heroku, AWS, or any VPS or even on cPanel. Programming is my passion and I am always ready to take challenges for any kind of unique or challenging tasks. I am a quick learner and I enjoy being challenged and engaging with projects that require me to work outside my comfort zone and knowledge set, as continuing to learn new technologies and development techniques.</p>
                 </div>
 
@@ -71,21 +71,6 @@
                 </div>
               </div>
             </div>
-            <v-card-actions class="hidden-md-and-up justify-center">
-              <v-btn
-                v-for="icon in icons"
-                :key="icon.icon"
-                small
-                fab
-                dark
-                outlined
-                color="green"
-                :href="icon.href"
-                target="_blank"
-              >
-                <v-icon dark>{{icon.icon}}</v-icon>
-              </v-btn>
-            </v-card-actions>
           </v-card>
         </div>
       </div>

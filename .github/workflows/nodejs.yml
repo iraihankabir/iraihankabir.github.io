@@ -1,42 +1,11 @@
-name: Node CI
+name: Deploy
 
 on: 
   push:
     branches:
-       - gh-pages # execute `deploy job` on push@gh-pages
-  pull_request:
-    branches: 
-      - master    # execute `test job` on pull_request@master
+      - master
 
 jobs:
-  test:
-    name: Test
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x]
-
-    steps:
-      - name: test pull_request
-        uses: actions/checkout@v1
-        if: github.event_name == 'pull_request'        
-        with:
-          node-version: '12.x'
-          run: |
-            echo "Installing dependencies"
-            yarn global add @vue/cli
-            yarn install
-            
-            echo "Testing code with lint"
-            yarn lint 
-            
-            echo "Testing production"
-            yarn -s serve
-            
-            echo "Producing SPA in dist directory for production"
-            yarn build
-            echo "Finished testing"
- 
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
@@ -44,13 +13,14 @@ jobs:
       matrix:
         node-version: [12.x]
     steps:
-      - name: deployment to gh-pages
-        uses: actions/checkout@v1
-        if: github.event_name == 'push'
+      - name: Building portfolio for rk4bir.github.io
+      - uses: actions/checkout@v1
         with:
           node-version: '12.x'
           run: |
             echo "Installing dependencies"
+            npm install -g yarn
+
             yarn global add @vue/cli
             yarn install
             
@@ -64,7 +34,7 @@ jobs:
             yarn build
             
             echo "Removing unwanted files"
-            rm -rf package.json .gitignore vue.config.js babel.config.js public/ src/ yarn-error.log deploy.sh LICENSE README.md yarn.lock
+            rm -rf package.json yarn.lock vue.config.js babel.config.js public/ src/
             
             echo "Moving dist/ to root directory and removing dist/ dir"
             mv dist/* . && rmdir dist/
