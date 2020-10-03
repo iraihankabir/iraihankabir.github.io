@@ -8,34 +8,41 @@ on:
 jobs:
   deploy:
     name: Deploy
+
     runs-on: ubuntu-latest
+    
     strategy:
       matrix:
         node-version: [12.x]
+
     steps:
       - name: Building portfolio for rk4bir.github.io
-      - uses: actions/checkout@v1
-        with:
-          node-version: '12.x'
-          name: deploy the project
-          run: |
-            echo "Installing dependencies"
-            npm install -g yarn
+        uses: actions/checkout@v1
 
-            yarn global add @vue/cli
-            yarn install
-            
-            echo "Testing codes with lint"
-            yarn lint
-            
-            echo "Testing production"
-            yarn -s serve
-            
-            echo "Producing SPA in dist directory for production"
-            yarn build
-            
-            echo "Removing unwanted files"
-            rm -rf package.json yarn.lock vue.config.js babel.config.js public/ src/
-            
-            echo "Moving dist/ to root directory and removing dist/ dir"
-            mv dist/* . && rmdir dist/
+      - name: Setting up node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: deploy the project
+        run: |
+          echo "Installing dependencies"
+          npm install -g yarn
+
+          yarn global add @vue/cli
+          yarn install
+          
+          echo "Testing codes with lint"
+          yarn lint
+          
+          echo "Testing production"
+          yarn -s serve
+          
+          echo "Producing SPA in dist directory for production"
+          yarn build
+          
+          echo "Removing unwanted files"
+          rm -rf package.json yarn.lock vue.config.js babel.config.js public/ src/
+          
+          echo "Moving dist/ to root directory and removing dist/ dir"
+          mv dist/* . && rmdir dist/
