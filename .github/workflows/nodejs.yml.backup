@@ -4,8 +4,43 @@ on:
   push:
     branches:
       - master
+      - dev
 
 jobs:
+  test:
+    name: Test
+
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [12.x]
+    
+    steps:
+      - name: Test
+        uses: actions/checkout@v1
+
+      - name: Setting up node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Testing...
+        run: |
+          echo "Installing dependencies"
+          yarn global add @vue/cli
+          yarn install
+          
+          echo "Testing code with lint"
+          yarn lint 
+          
+          echo "Testing production"
+          yarn -s serve
+          
+          echo "Producing SPA in dist directory for production"
+          yarn build
+          echo "Finished testing"
+
   deploy:
     name: Deploy
 
