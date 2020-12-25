@@ -1,13 +1,16 @@
 <template>
   <v-container grid-list-xl class='pt-5'>
-    <v-layout row justify-center align-center wrap class="mt-5 pt-2">
+    <v-layout row justify-center align-center wrap class="mt-5 pt-5">
       <v-flex xs12 sm12 md12 lg12 xl12>
-        <h2 class="pl-4 mt-5 text-center">
+        <h2 class="mt-5 text-center mb-5">
           <span>My</span> <span class="green--text">Services</span>
         </h2>
       </v-flex>
       <v-flex class="mt-5" v-for="service in services" :key="service.src" xs6 sm3 md3 lg3 xl3>
-        <v-card hover flat color="transparent" :style="{'cursor':'context-menu'}" class="text-center">
+        <v-card hover flat color="transparent" 
+          :style="{'cursor':'context-menu'}" 
+          class="text-center"
+        >
           <v-card-title></v-card-title>
           <v-img
             :src="service.src"
@@ -30,29 +33,7 @@
 export default {
   metaInfo: {
     title: 'Services',
-    titleTemplate: "%s ← Raihan Kabir",
-    meta: [
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        name: 'description',
-        content:
-          "Raihan Kabir's Services: Web Development, Flutter Development, Mobile Development, Android Development, Web Designing, Front-End Design, Back-End Development"
-      },
-      { charset: 'utf-8' },
-      { property: 'og:title', content: "Raihan Kabir" },
-      { property: 'og:site_name', content: "Raihan Kabir" },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://rk4bir.github.io/' },
-      {
-        property: 'og:image',
-        content: 'https://i.imgur.com/a8TeA0D.png'
-      },
-      {
-        property: 'og:description',
-        content:
-          "Raihan Kabir's Services Web Development Web Design Front-End Flutter Developer Mobile Application Developer"
-      }
-    ]
+    titleTemplate: "%s ← Raihan Kabir"
   },
   data () {
     return {

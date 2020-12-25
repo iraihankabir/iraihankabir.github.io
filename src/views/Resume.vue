@@ -16,7 +16,7 @@
                     <strong>{{ education.degree }}</strong>
                     <div class="caption mb-2">
                       {{ education.major }}, 
-                      <span class="green--text font-weight-bold">{{ education.institute }}</span>
+                      <a target="_blank" class="font-weight-bold" :href="education.link">{{ education.institute }}</a>
                     </div>
                   </v-flex>
                 </v-layout>
@@ -42,7 +42,8 @@
                   <v-flex class="pl-2">
                     <strong>{{achievement.title}}</strong>
                     <div class="caption mb-2">
-                      {{achievement.result}} | <a class="font-weight-bold" target="_blank" :href="achievement.resultUrl">Result</a> | <a :href="achievement.hostUrl"><strong>{{achievement.host}}</strong></a>
+                      {{achievement.result}} | 
+                      <a target="_blank" :href="achievement.hostUrl"><strong>{{achievement.host}}</strong></a>
                     </div>
                   </v-flex>
                 </v-layout>
@@ -69,7 +70,7 @@
                     <strong>{{ academic.title }}</strong>
                     <div class="caption mb-2">
                       {{ academic.type }} | {{ academic.topic }} |
-                      <a :href="academic.link" class="green--text font-weight-bold">
+                      <a :href="academic.link" class="font-weight-bold">
                         Source
                       </a>
                     </div>
@@ -97,7 +98,10 @@
                   </v-flex>
                   <v-flex class="pl-2">
                     <strong>{{experience.title}}</strong>
-                    <div class="caption mb-2">{{experience.type}}, <a class="font-weight-bold" :href="experience.instituteUrl">{{experience.institute}}</a></div>
+                    <div class="caption mb-2">
+                      {{experience.type}}, 
+                      <a target="_blank" class="font-weight-bold" :href="experience.instituteUrl">{{experience.institute}}</a>
+                    </div>
                   </v-flex>
                 </v-layout>
               </v-timeline-item>
@@ -108,7 +112,7 @@
     </v-flex>
 
     <v-flex xs12 sm12 md6 lg6 xl6  class="mt-5 pt-4">
-      <h2 class="mb-4 pl-4 pt-2">Projects</h2>
+      <h2 class="mb-4 pl-4 pt-2">Me-Projects</h2>
       <v-card-text class="py-0">
         <v-container fluid>
           <v-timeline align-top dense>
@@ -124,10 +128,10 @@
                     <div class="caption mb-2">
                       {{project.type}} 
                       <span v-if="project.sourceCodesUrl">
-                        | <a target="_blank" :href="project.sourceCodesUrl">Source codes</a>
+                        | <a target="_blank" class="font-weight-bold" :href="project.sourceCodesUrl">Source codes</a>
                       </span>
                       <span v-if="project.projectUrl">
-                        | <a target="_blank" :href="project.projectUrl">Demo</a>
+                        | <a target="_blank" class="font-weight-bold" :href="project.projectUrl">Demo</a>
                       </span>
                     </div>
                   </v-flex>
@@ -159,28 +163,6 @@ export default {
   metaInfo: {
     title: 'Resume',
     titleTemplate: "%s ← Raihan Kabir",
-    meta: [
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        name: 'description',
-        content:
-          'Vue NUXT HTML CSS JavaScript Design Adobe XD Photoshop Coding Skills Resume Work Web Developer Front-End'
-      },
-      { charset: 'utf-8' },
-      { property: 'og:title', content: "Raihan Kabir" },
-      { property: 'og:site_name', content: "Raihan Kabir" },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://rk4bir.github.io/' },
-      {
-        property: 'og:image',
-        content: 'https://i.imgur.com/a8TeA0D.png'
-      },
-      {
-        property: 'og:description',
-        content:
-          'Python Django Flask Web Scraping Vue NUXT HTML CSS JavaScript Design Coding Skills Resume Work Web Developer Front-End Flutter Mobile Developer'
-      }
-    ]
   },
   data () {
     return {
@@ -190,6 +172,7 @@ export default {
           degree: "Bachelor of Science", 
           institute: "University of Rajshahi",
           major: "Physics",
+          link: "http://www.ru.ac.bd/"
         },
       ],
       academics: [
@@ -220,26 +203,25 @@ export default {
           year: 2020,
           title: "Q1’2020 Hackathon, Feb 12-13, 2020",
           result: "Selected for second place",
-          resultUrl: "https://gitlab.com/gitlab-com/marketing/community-relations/contributor-program/hackathon/issues/33",
           host: "GitLab Inc.",
           hostUrl: "https://gitlab.com/"
         }
       ],
       experiences: [
         {
-          start: "JUNE 2020",
+          start: "OCT 2020",
           end: "Present",
-          title: "Software Engineer",
-          type: "Freelance",
-          institute: "Fiverr International Ltd.",
-          instituteUrl: "https://www.fiverr.com/"
+          title: "Software Developer",
+          type: "Full-time (Remote)",
+          institute: "MachineryPartner Ltd., U.S.A",
+          instituteUrl: "#!"
         },
         {
           start: "SEP 2019",
           end: "Present",
           title: "Assist. System Admin",
-          type: "Volunteer",
-          institute: "Arun-HPCC, University of Rajshahi",
+          type: "Volunteer (part-time)",
+          institute: "Arun-HPCC, RU",
           instituteUrl: "https://arun-hpcc.ru.ac.bd/"
         }
       ],
@@ -270,7 +252,7 @@ export default {
         { title: "Web Development", val: 0, staticVal: 90 },
         { title: "Web Design", val: 0, staticVal: 75 },
         { title: "Mobile Development", val: 0, staticVal: 55 },
-        { title: "Web Scraping", val: 0, staticVal: 70 },
+        { title: "Web Scraping", val: 0, staticVal: 80 },
         { title: "Machine Learning", val: 0, staticVal: 30 },
       ],
       bufferValue: 100,

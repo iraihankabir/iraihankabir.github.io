@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-xl style="margin-top: 40px">
     <v-layout row justify-center align-center wrap class="mt-4 pt-5">
-      <v-flex xs12 sm12 md6 lg6 xl6>
+      <v-flex xs12 sm12 md4 lg4 xl4>
         <h2 class="pb-4 mt-2">
           <span>Contact</span> <span class="green--text">Me</span>
         </h2>
@@ -20,9 +20,9 @@
         </div>
       </v-flex>
 
-      <v-flex xs12 sm12 md6 lg6 xl6>
+      <v-flex xs12 sm12 md8 lg8 xl8>
         <h2 class="pb-4 mb-4">
-          <span>Get a</span> <span class="green--text">quote</span>
+          <span>Send</span> <span class="green--text">message</span>
         </h2>
 
         <form method="POST" action="https://formspree.io/xqkyeper">
@@ -50,7 +50,7 @@
           <v-textarea
             color="green"
             background-color="transparent"
-            :counter="200"
+            :counter="1000"
             :error-messages="bodyErrors"
             v-model="body"
             label="Textarea"
@@ -83,34 +83,12 @@ export default {
   metaInfo: {
     title: 'Contact',
     titleTemplate: "%s ← Raihan Kabir",
-    meta: [
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        name: 'description',
-        content:
-          "Raihan Kabir's Contact Doboj Bosnia and Herzegovina Freelance Get in Touch ContactMe"
-      },
-      { charset: 'utf-8' },
-      { property: 'og:title', content: "Raihan Kabir" },
-      { property: 'og:site_name', content: "Raihan Kabir" },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://rk4bir.github.io/' },
-      {
-        property: 'og:image',
-        content: 'https://i.imgur.com/a8TeA0D.png'
-      },
-      {
-        property: 'og:description',
-        content:
-          "Raihan Kabir's Contact Rajshahi Bangladesh"
-      }
-    ]
   },
   mixins: [validationMixin],
   validations: {
     name: { required, maxLength: maxLength(32) },
     email: { required, email },
-    body: { required, minLength: minLength(140) }
+    body: { required, minLength: minLength(140), maxLength: maxLength(1000) }
   },
   data () {
     return {

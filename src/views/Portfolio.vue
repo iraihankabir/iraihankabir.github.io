@@ -51,28 +51,6 @@ export default {
   metaInfo: {
     title: 'Portfolio',
     titleTemplate: "%s ← Raihan Kabir",
-    meta: [
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        name: 'description',
-        content:
-          "Raihan Kabir's Web Portfolio Vue Vue.js Nuxt Nuxt.js HTML CSS Vuetify Axios GraphQL JavaScript Web Developer Front-End Frontend Designer App Responsive"
-      },
-      { charset: 'utf-8' },
-      { property: 'og:title', content: "Raihan Kabir" },
-      { property: 'og:site_name', content: "Raihan Kabir" },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://rk4bir.github.io/' },
-      {
-        property: 'og:image',
-        content: 'https://i.imgur.com/a8TeA0D.png'
-      },
-      {
-        property: 'og:description',
-        content:
-          "Raihan Kabir's Web Portfolio Python Django Flask SQL Flutter Android iOS Vue Vue.js Nuxt Nuxt.js HTML CSS Vuetify Axios GraphQL JavaScript Web Developer Front-End Frontend Designer App Responsive"
-      }
-    ]
   },
   data () {
     return {

@@ -19,7 +19,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+  metaInfo: {
+    title: '404',
+    titleTemplate: "%s ← Raihan Kabir",
+  },
+}
 </script>
 
 <style scoped>
