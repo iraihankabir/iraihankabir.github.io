@@ -1,15 +1,10 @@
 <template>
   <v-container grid-list-xl style="margin-top: 40px">
     <v-layout row justify-center align-center wrap class="mt-4 pt-5">
-      <v-flex xs12 sm12 md4 lg4 xl4>
+      <v-flex xs12 sm12 md4 lg4 xl4 class="d-none d-md-block d-lg-block">
         <h2 class="pb-4 mt-2">
           <span>Contact</span> <span class="green--text">Me</span>
         </h2>
-        <div class="py-4 subheading font-weight-bold">
-          <v-icon large color="green" left>fa fa-map-marker</v-icon>
-          <span>Rajshahi,&nbsp;</span>
-          <span class="green--text">Bangladesh</span>
-        </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="green" left>fa fa-check-circle</v-icon>
           <span>Freelance</span> <span class="green--text">Available</span>
@@ -50,7 +45,7 @@
           <v-textarea
             color="green"
             background-color="transparent"
-            :counter="1000"
+            :counter="200"
             :error-messages="bodyErrors"
             v-model="body"
             label="Textarea"
@@ -83,12 +78,34 @@ export default {
   metaInfo: {
     title: 'Contact',
     titleTemplate: "%s ← Raihan Kabir",
+    meta: [
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        name: 'description',
+        content:
+          "Raihan Kabir's Contact Doboj Bosnia and Herzegovina Freelance Get in Touch ContactMe"
+      },
+      { charset: 'utf-8' },
+      { property: 'og:title', content: "Raihan Kabir" },
+      { property: 'og:site_name', content: "Raihan Kabir" },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://rk4bir.github.io/' },
+      {
+        property: 'og:image',
+        content: 'https://i.imgur.com/a8TeA0D.png'
+      },
+      {
+        property: 'og:description',
+        content:
+          "Raihan Kabir's Contact Rajshahi Bangladesh"
+      }
+    ]
   },
   mixins: [validationMixin],
   validations: {
     name: { required, maxLength: maxLength(32) },
     email: { required, email },
-    body: { required, minLength: minLength(140), maxLength: maxLength(1000) }
+    body: { required, minLength: minLength(140) }
   },
   data () {
     return {

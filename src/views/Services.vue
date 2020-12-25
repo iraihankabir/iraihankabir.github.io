@@ -16,7 +16,7 @@
             :src="service.src"
             height="100"
             aspect-ratio="2.75"
-            :alt="'Kabir do '+service.title"
+            :alt="'rk4bir do '+service.title"
             lazy-src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif"
             contain
           ></v-img>

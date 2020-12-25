@@ -1,6 +1,6 @@
-<template>
+<template >
   <v-app :dark="goDark">
-    <v-content>
+    <v-main>
       <v-container align-center>
         <Header :appBarBG="appBarBG" @changeTheme="updateTheme($event)"/>
 
@@ -13,7 +13,7 @@
           <router-view></router-view>
         </transition>
       </v-container>
-    </v-content>
+    </v-main>
     <Footer/>
   </v-app>
 </template>

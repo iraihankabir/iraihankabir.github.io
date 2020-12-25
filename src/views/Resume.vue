@@ -212,16 +212,16 @@ export default {
           start: "OCT 2020",
           end: "Present",
           title: "Software Developer",
-          type: "Full-time (Remote)",
-          institute: "MachineryPartner Ltd., U.S.A",
+          type: "Full-time",
+          institute: "MachineryPartner Ltd., USA",
           instituteUrl: "#!"
         },
         {
           start: "SEP 2019",
           end: "Present",
           title: "Assist. System Admin",
-          type: "Volunteer (part-time)",
-          institute: "Arun-HPCC, RU",
+          type: "Volunteer",
+          institute: "Arun-HPCC, University of Rajshahi",
           instituteUrl: "https://arun-hpcc.ru.ac.bd/"
         }
       ],
