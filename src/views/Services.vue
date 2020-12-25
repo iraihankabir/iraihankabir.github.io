@@ -6,7 +6,7 @@
           <span>My</span> <span class="green--text">Services</span>
         </h2>
       </v-flex>
-      <v-flex class="mt-5" v-for="service in services" :key="service.src" xs6 sm3 md3 lg3 xl3>
+      <v-flex class="mt-5 hover-effect" v-for="service in services" :key="service.src" xs6 sm3 md3 lg3 xl3>
         <v-card hover flat color="transparent" 
           :style="{'cursor':'context-menu'}" 
           class="text-center"
@@ -63,5 +63,9 @@ export default {
 <style >
 .v-img--reveal {
   opacity: 0.3;
+}
+.hover-effect:hover {
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(196,196,196,0.76); 
+  box-shadow: 0px 0px 10px 1px rgba(196,196,196,0.76);
 }
 </style>

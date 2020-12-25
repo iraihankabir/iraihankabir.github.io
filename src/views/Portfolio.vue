@@ -13,7 +13,7 @@
       >
         <template v-slot:activator="{ on }">
           <v-flex xs12 sm6 md4 lg4 xl4 v-on="on">
-            <v-card hover flat color="transparent">
+            <v-card hover flat color="transparent hover-effect">
               <v-img
                 :src="project.poster"
                 :alt="project.title"
@@ -182,4 +182,9 @@ export default {
 </script>
 
 <style  scoped>
+.hover-effect { border: 1px solid rgba(196,196,196,0.81)!important }
+.hover-effect:hover {
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(160,160,160,0.81)!important; 
+  box-shadow: 0px 0px 20px 1px rgba(160,160,160,0.81)!important;
+}
 </style>
