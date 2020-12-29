@@ -94,9 +94,17 @@ export default {
         { href: 'https://github.com/rk4bir', icon: 'fab fa-github' },
         {
           href: 'https://stackoverflow.com/users/10371817/raihan-kabir', 
-          icon: 'fab fa-stack-overflow' },
+          icon: 'fab fa-stack-overflow' 
+        },
         { href: 'https://www.linkedin.com/in/rk4bir', icon: 'fab fa-linkedin' },
-        { href: "https://www.researchgate.net/profile/Raihan_Kabir3", icon: 'fab fa-researchgate' }
+        { 
+          href: "https://www.researchgate.net/profile/Raihan_Kabir3", 
+          icon: 'fab fa-researchgate' 
+        },
+        {
+          href: "https://www.hackerrank.com/rk4bir",
+          icon: "fab fa-hackerrank"
+        }
       ],
       titles: ['Passionate Learner', 'Software Developer (BE-heavy)', 'Web Scraper'],
       leftImage: require('@/assets/rk4bir_green.svg'),
