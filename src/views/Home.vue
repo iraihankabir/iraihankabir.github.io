@@ -90,12 +90,13 @@ export default {
   data () {
     return {
       icons: [
-        { href: 'https://gitlab.com/rk4bir', icon: 'fa fa-gitlab' },
-        { href: 'https://github.com/rk4bir', icon: 'fa fa-github' },
+        { href: 'https://gitlab.com/rk4bir', icon: 'fab fa-gitlab' },
+        { href: 'https://github.com/rk4bir', icon: 'fab fa-github' },
         {
           href: 'https://stackoverflow.com/users/10371817/raihan-kabir', 
-          icon: 'fa fa-stack-overflow' },
-        { href: 'https://www.linkedin.com/in/rk4bir', icon: 'fa fa-linkedin' }
+          icon: 'fab fa-stack-overflow' },
+        { href: 'https://www.linkedin.com/in/rk4bir', icon: 'fab fa-linkedin' },
+        { href: "https://www.researchgate.net/profile/Raihan_Kabir3", icon: 'fab fa-researchgate' }
       ],
       titles: ['Passionate Learner', 'Software Developer (BE-heavy)', 'Web Scraper'],
       leftImage: require('@/assets/rk4bir_green.svg'),
