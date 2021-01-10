@@ -213,7 +213,7 @@ export default {
           end: "Present",
           title: "Software Developer",
           type: "Full-time",
-          institute: "MachineryPartner Ltd., USA",
+          institute: "Machinery Partner, USA",
           instituteUrl: "#!"
         },
         {
