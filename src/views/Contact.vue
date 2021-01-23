@@ -48,7 +48,7 @@
             :counter="200"
             :error-messages="bodyErrors"
             v-model="body"
-            label="Textarea"
+            label="Message"
             name="body"
             @blur="$v.body.$touch()"
           ></v-textarea>
