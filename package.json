@@ -13,11 +13,11 @@
     "marked": "^1.0.0",
     "node-sass": "^4.14.1",
     "vue": "^2.6.11",
+    "vue-compare-image": "^0.2.0",
     "vue-meta": "^2.3.3",
     "vue-plyr": "^6.0.4",
     "vue-router": "^3.1.6",
     "vue-typer": "^1.2.0",
-    "vue-compare-image": "^0.2.0",
     "vuelidate": "^0.7.5",
     "vuetify": "^2.2.28"
   },
