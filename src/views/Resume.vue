@@ -212,13 +212,13 @@ export default {
           start: "OCT 2020",
           end: "Present",
           title: "Software Developer",
-          type: "Full-time",
+          type: "Remote",
           institute: "Machinery Partner, USA",
           instituteUrl: "#!"
         },
         {
           start: "SEP 2019",
-          end: "Present",
+          end: "MAR 2020",
           title: "Assist. System Admin",
           type: "Volunteer",
           institute: "Arun-HPCC, University of Rajshahi",
@@ -249,11 +249,11 @@ export default {
         }
       ],
       skills: [
-        { title: "Web Development", val: 0, staticVal: 90 },
-        { title: "Web Design", val: 0, staticVal: 75 },
-        { title: "Mobile Development", val: 0, staticVal: 55 },
-        { title: "Web Scraping", val: 0, staticVal: 80 },
-        { title: "Machine Learning", val: 0, staticVal: 30 },
+        { title: "Web Development", val: 0, staticVal: 95 },
+        { title: "Web Design", val: 0, staticVal: 92 },
+        { title: "Mobile Development", val: 0, staticVal: 60 },
+        { title: "Web Scraping", val: 0, staticVal: 90 },
+        { title: "Machine Learning", val: 0, staticVal: 20 },
       ],
       bufferValue: 100,
       interval: 0
