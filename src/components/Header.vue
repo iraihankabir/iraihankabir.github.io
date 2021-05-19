@@ -48,7 +48,7 @@
     </v-navigation-drawer>
 
     <v-app-bar flat dense :color="appBarBG" scroll-off-screen fixed elevation='0'>
-      <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon class="hidden-md-and-up text-right" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-items class="hidden-sm-and-down" style="width: 100%; justify-content: center!important; text-align: center;">
         <v-btn text to="/" active-class="green--text headline">Home</v-btn>
         <v-btn text to="/resume" active-class="green--text headline">Resume</v-btn>

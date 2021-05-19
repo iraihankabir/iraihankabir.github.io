@@ -49,7 +49,7 @@ export default {
 
         {
           src: require('@/assets/service/app.png'),
-          title: 'App Development'
+          title: 'Mobile Development'
         },
         {
           src: require('@/assets/service/scraping.png'),

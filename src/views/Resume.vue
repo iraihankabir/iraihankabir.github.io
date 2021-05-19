@@ -55,7 +55,7 @@
     </v-flex>
 
     <v-flex xs12 sm12 md6 lg6 xl6 class="mt-4 pt-4">
-      <h2 class="mb-4 pl-4 pt-2">Project & Publication</h2>
+      <h2 class="mb-4 pl-4 pt-2">Academic</h2>
       <v-card-text class="py-0">
         <v-container fluid>
           <v-timeline align-top dense>
@@ -70,7 +70,7 @@
                     <strong>{{ academic.title }}</strong>
                     <div class="caption mb-2">
                       {{ academic.type }} | {{ academic.topic }} |
-                      <a :href="academic.link" class="font-weight-bold">
+                      <a target="_blank" :href="academic.link" class="font-weight-bold">
                         Source
                       </a>
                     </div>
@@ -111,45 +111,13 @@
       </v-card-text>
     </v-flex>
 
-    <v-flex xs12 sm12 md6 lg6 xl6  class="mt-5 pt-4">
-      <h2 class="mb-4 pl-4 pt-2">Me-Projects</h2>
-      <v-card-text class="py-0">
-        <v-container fluid>
-          <v-timeline align-top dense>
-            <!-- projects -->
-            <div v-for="project in projects" :key="project.title">
-              <v-timeline-item color="green" small>
-                <v-layout pt-3>
-                  <v-flex xs2>
-                    <div class="caption font-weight-bold green--text">{{project.year}}</div>
-                  </v-flex>
-                  <v-flex class="pl-2">
-                    <strong>{{project.title}}</strong>
-                    <div class="caption mb-2">
-                      {{project.type}} 
-                      <span v-if="project.sourceCodesUrl">
-                        | <a target="_blank" class="font-weight-bold" :href="project.sourceCodesUrl">Source codes</a>
-                      </span>
-                      <span v-if="project.projectUrl">
-                        | <a target="_blank" class="font-weight-bold" :href="project.projectUrl">Demo</a>
-                      </span>
-                    </div>
-                  </v-flex>
-                </v-layout>
-              </v-timeline-item>
-            </div>
-          </v-timeline>
-        </v-container>
-      </v-card-text>
-    </v-flex>
-
     <v-layout row justify-center align-center wrap class="mt-5 pt-2">
       <v-flex xs12 class="mx-2 pt-4 text-center">
          <h2 class="mb-4 pl-4 pt-2">Skills</h2>
       </v-flex>
-      <v-flex class="mx-5 pt-4">
+      <v-flex class="mx-14 mb-5 pt-4 pb-5">
         <!-- skills -->
-        <div v-for="skill in skills" :key="skill.title">
+        <div class="mx-8" v-for="skill in skills" :key="skill.title">
           {{skill.title}}
           <v-progress-linear v-model="skill.val" :buffer-value="bufferValue" color="green" height="16"></v-progress-linear>
         </div>
@@ -214,45 +182,22 @@ export default {
           title: "Software Developer",
           type: "Remote",
           institute: "Machinery Partner, USA",
-          instituteUrl: "#!"
+          instituteUrl: "http://www.machinerypartner.com/"
         },
         {
           start: "SEP 2019",
-          end: "MAR 2020",
+          end: "Present",
           title: "Assist. System Admin",
           type: "Volunteer",
           institute: "Arun-HPCC, University of Rajshahi",
           instituteUrl: "https://arun-hpcc.ru.ac.bd/"
         }
       ],
-      projects: [
-        {
-          year: "2020",
-          title: "Pandemic Live (COVID19)",
-          type: "Mobile App.",
-          sourceCodesUrl: "https://github.com/rk4bir/pandemic-live",
-          projectUrl: false
-        },
-        {
-          year: "2019",
-          title: "Tic Tac Toe",
-          type: "Game",
-          sourceCodesUrl: "https://github.com/rk4bir/tic-tac-toe",
-          projectUrl: "https://rk4bir.github.io/tic-tac-toe/"
-        },
-        {
-          year: "2018",
-          title: "Friends",
-          type: "Web App.",
-          sourceCodesUrl: "https://github.com/rk4bir/friends",
-          projectUrl: false
-        }
-      ],
       skills: [
         { title: "Web Development", val: 0, staticVal: 95 },
-        { title: "Web Design", val: 0, staticVal: 92 },
-        { title: "Mobile Development", val: 0, staticVal: 60 },
-        { title: "Web Scraping", val: 0, staticVal: 90 },
+        { title: "Web Design", val: 0, staticVal: 90 },
+        { title: "Mobile Development", val: 0, staticVal: 55 },
+        { title: "Web Scraping", val: 0, staticVal: 95 },
         { title: "Machine Learning", val: 0, staticVal: 20 },
       ],
       bufferValue: 100,

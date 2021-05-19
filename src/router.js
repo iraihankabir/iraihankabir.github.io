@@ -18,31 +18,30 @@ export default new Router({
     path: '/contact',
     name: 'contact',
     component: () =>
-        import(/* webpackChunkName: "about" */ './views/Contact.vue')
+        import('./views/Contact.vue')
   },
   {
     path: '/resume',
     name: 'resume',
     component: () =>
-        import(/* webpackChunkName: "about" */ './views/Resume.vue')
+        import('./views/Resume.vue')
   },
   {
     path: '/services',
     name: 'services',
     component: () =>
-        import(/* webpackChunkName: "about" */ './views/Services.vue')
+        import('./views/Services.vue')
   },
   {
     path: '/portfolio',
     name: 'portfolio',
     component: () =>
-        import(/* webpackChunkName: "about" */ './views/Portfolio.vue')
+        import('./views/Portfolio.vue')
   },
   {
     path: '*',
     name: 'Error',
     component: () =>
-        import(/* webpackChunkName: "about" */ './views/Error.vue')
-  }
-  ]
+        import('./views/Error.vue')
+  }]
 })
