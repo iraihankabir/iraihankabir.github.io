@@ -2,10 +2,10 @@
   <v-layout class="mt-5 pt-2">
     <div class="container" style="margin-top: 30px">
       <div class="row">
-        <div class="col-md-4 col-sm-12 col-lg-3">
+        <div class="col-md-4 col-12 col-lg-3 text-center">
           <VueCompareImage
             hover
-            style="width: 240px"
+            class="img-fluid"
             :sliderLineWidth="sliderLine"
             :handleSize="hSize"
             :leftImage="leftImage"
@@ -31,40 +31,38 @@
           ></vue-typer>
         </div>
 
-        <div class="col-md-8 col-sm-12 col-lg-9 mt-5">
+        <div class="col-md-8 col-12 col-lg-9 sm-mt-0 mt-5">
           <v-card flat color="transparent">
-            <div class="mt-5">
-              <div 
-                class="font-weight-light text-justify" style="font-size: 0.9rem; letter-spacing: 2px"
-              >
-                <div>
-                  <p>I am a software developer with extensive experience with linux system. I have played with a lot of tools and technologies. However, I like to call these tools and tech. as my primary skills for software development-</p>
-                  <!-- skills -->
-                  <p>
-                    <strong style="color: green">Python</strong> ➞ Django, DRF, Flask, Celery, Redis, Channels, Selenium, BeautifulSoup<br>
-                    <strong style="color: green">JavaScript</strong> ➞ jQuery, Vue, Nuxt, Node, Express<br>
-                    <strong style="color: green">Database</strong> ➞ PostgreSQL, MySQL, Firestore, MongoDB, SQLite3<br>
-                    <strong style="color: green">Others</strong> ➞ Linux, Docker, Virtual Environment, Git, CI-CD, Unit testing, Automation, Scripting
-                  </p>
-                  <p>Also, I am very comfortable with HTML5, CSS3 and some cutting edge front-end technologies. Apart from development I can deploy apps to cloud providers like Heroku, AWS, or any VPS or even on cPanel. Programming is my passion and I am always ready to take challenges for any kind of unique or challenging tasks. I am a quick learner and I enjoy being challenged and engaging with projects that require me to work outside my comfort zone and knowledge set, as continuing to learn new technologies and development techniques.</p>
-                </div>
+            <div 
+              class="font-weight-light text-justify" style="font-size: 0.9rem; letter-spacing: 2px"
+            >
+              <div>
+                <p>I am a software developer with extensive experience with linux system. I have played with a lot of tools and technologies. However, I like to call these tools and tech. as my primary skills for software development-</p>
+                <!-- skills -->
+                <p>
+                  <strong style="color: green">Python</strong> ➞ Django, DRF, Flask, Celery, Redis, Channels, Selenium, BeautifulSoup<br>
+                  <strong style="color: green">JavaScript</strong> ➞ jQuery, Vue, Nuxt, Node, Express<br>
+                  <strong style="color: green">Database</strong> ➞ PostgreSQL, MySQL, Firestore, MongoDB, SQLite3<br>
+                  <strong style="color: green">Others</strong> ➞ Linux, Docker, Virtual Environment, Git, CI-CD, Unit testing, Automation, Scripting
+                </p>
+                <p>Also, I am very comfortable with HTML5, CSS3 and some cutting edge front-end technologies. Apart from development I can deploy apps to cloud providers like Heroku, AWS, or any VPS or even on cPanel. Programming is my passion and I am always ready to take challenges for any kind of unique or challenging tasks. I am a quick learner and I enjoy being challenged and engaging with projects that require me to work outside my comfort zone and knowledge set, as continuing to learn new technologies and development techniques.</p>
+              </div>
 
-                <div class="mt-5">
-                  <v-btn
-                    v-for="icon in icons"
-                    :key="icon.icon"
-                    small
-                    fab
-                    dark
-                    outlined
-                    color="green"
-                    :href="icon.href"
-                    target="_blank"
-                    class="mr-2"
-                  >
-                    <v-icon dark>{{icon.icon}}</v-icon>
-                  </v-btn>
-                </div>
+              <div class="mt-5">
+                <v-btn
+                  v-for="icon in icons"
+                  :key="icon.icon"
+                  small
+                  fab
+                  dark
+                  outlined
+                  color="green"
+                  :href="icon.href"
+                  target="_blank"
+                  class="mr-2"
+                >
+                  <v-icon dark>{{icon.icon}}</v-icon>
+                </v-btn>
               </div>
             </div>
           </v-card>

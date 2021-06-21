@@ -7,48 +7,47 @@
       width="100%" 
       height="100%"
       elevation='3'
-      style="background: #344d3a"
     >
-      <div class="text-right">
-        <v-btn text @click.stop="drawer = !drawer">
-          <v-icon>fa fa-close</v-icon>
-        </v-btn>
+      <div class="text-right mt-2 mr-2 mb-6">
+        <v-btn text outlined small color="success" @click.stop="drawer = !drawer">
+            X close
+          </v-btn>
       </div>
       <v-list 
         align="center"
         justify="center" 
-        class="pt-4 text-center font-weight-bold"
+        class="mt-0"
       >
         <v-list-item active-class="green--text" to="/">
           <v-list-item-content>
-            <v-list-item-title>HOME</v-list-item-title>
+            <v-list-item-title>Home</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item active-class="green--text" to="/resume">
           <v-list-item-content>
-            <v-list-item-title>RESUME</v-list-item-title>
+            <v-list-item-title>Resume</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item active-class="green--text" to="/services">
           <v-list-item-content>
-            <v-list-item-title>SERVICES</v-list-item-title>
+            <v-list-item-title>Services</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item active-class="green--text" to="/portfolio">
           <v-list-item-content>
-            <v-list-item-title>PORTFOLIO</v-list-item-title>
+            <v-list-item-title>Portfolio</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item active-class="green--text" to="/contact">
           <v-list-item-content>
-            <v-list-item-title>CONTACT</v-list-item-title>
+            <v-list-item-title>Contact</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
     <v-app-bar flat dense :color="appBarBG" scroll-off-screen fixed elevation='0'>
-      <v-app-bar-nav-icon class="hidden-md-and-up text-right" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon class="hidden-md-and-up green--text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-items class="hidden-sm-and-down" style="width: 100%; justify-content: center!important; text-align: center;">
         <v-btn text to="/" active-class="green--text headline">Home</v-btn>
         <v-btn text to="/resume" active-class="green--text headline">Resume</v-btn>
@@ -76,5 +75,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
